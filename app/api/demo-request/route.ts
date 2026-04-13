@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       );
     }
 
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: "ColdControl Demo <onboarding@resend.dev>",
       to: process.env.DEMO_RECEIVER_EMAIL || "",
       subject: `Novi demo zahtev - ${company}`,
@@ -44,8 +44,15 @@ export async function POST(req: Request) {
       `,
     });
 
+    if (error) {
+      return NextResponse.json(
+        { error: "Mail nije poslat." },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Greška pri slanju zahteva." },
       { status: 500 }
