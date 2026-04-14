@@ -96,11 +96,7 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(520px,620px)] lg:gap-14">
         <div className="min-w-0 max-w-[620px]">
-          <h1 className="mb-5 text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-  Sigurna kontrola temperature
-  <span className="mt-2 block text-yellow-400">
-    bez rizika za robu i poslovanje
-  </span>
+          
 <h1 className="mb-5 text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
   Sigurna kontrola temperature
   <span className="mt-2 block text-yellow-400">
