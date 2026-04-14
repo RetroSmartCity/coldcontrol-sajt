@@ -97,15 +97,17 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(520px,620px)] lg:gap-14">
         <div className="min-w-0 max-w-[620px]">
           <h1 className="mb-5 text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-            Kontrola temperature
-            <span className="mt-2 block text-yellow-400">u realnom vremenu</span>
-          </h1>
+  Sigurna kontrola temperature
+  <span className="mt-2 block text-yellow-400">
+    bez rizika za robu i poslovanje
+  </span>
+</h1>
 
-          <p className="mb-8 max-w-[580px] text-lg leading-8 text-white/80 lg:text-[20px]">
-            Pouzdan monitoring temperature za apoteke, hladnjače, restorane i
-            objekte gde su tačna evidencija, brz alarm i pregled svih lokacija
-            ključni za svakodnevni rad.
-          </p>
+<p className="mb-8 max-w-[580px] text-lg leading-8 text-white/80 lg:text-[20px]">
+  Kontrola temperature u realnom vremenu za apoteke, hladnjače i objekte
+  sa više lokacija — uz automatske alarme, evidenciju merenja i potpunu
+  kontrolu sistema iz jedne platforme.
+</p>
 
           <div className="mb-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
