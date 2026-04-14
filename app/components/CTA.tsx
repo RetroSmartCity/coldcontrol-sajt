@@ -32,21 +32,27 @@ export default function CTA() {
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3 sm:gap-4">
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-4">
-                  <p className="mb-1 text-sm font-semibold text-white">Brzo postavljanje</p>
+                  <p className="mb-1 text-sm font-semibold text-white">
+                    Brzo postavljanje
+                  </p>
                   <p className="text-sm leading-6 text-white/60">
                     Bez komplikovanog uvođenja sistema
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-4">
-                  <p className="mb-1 text-sm font-semibold text-white">Instant alarmi</p>
+                  <p className="mb-1 text-sm font-semibold text-white">
+                    Instant alarmi
+                  </p>
                   <p className="text-sm leading-6 text-white/60">
                     Reakcija odmah kada nešto nije u redu
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-4">
-                  <p className="mb-1 text-sm font-semibold text-white">Više lokacija</p>
+                  <p className="mb-1 text-sm font-semibold text-white">
+                    Više lokacija
+                  </p>
                   <p className="text-sm leading-6 text-white/60">
                     Sve pregledno iz jedne kontrolne table
                   </p>
@@ -71,22 +77,15 @@ export default function CTA() {
                   i načina kako se sistem uklapa u svakodnevni rad tvog objekta.
                 </p>
 
-                <div className="mt-8 flex flex-col gap-3">
+                <div className="mt-8">
                   <Link
                     href="/login"
-                    className="rounded-2xl bg-yellow-400 px-6 py-4 text-center text-base font-bold text-black shadow-[0_12px_30px_rgba(250,204,21,0.25)] transition hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(250,204,21,0.30)]"
+                    className="block rounded-2xl bg-yellow-400 px-6 py-4 text-center text-base font-bold text-black shadow-[0_12px_30px_rgba(250,204,21,0.25)] transition hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(250,204,21,0.30)]"
                   >
                     Zakaži demo
                   </Link>
 
-                  <Link
-                    href="/dashboard"
-                    className="rounded-2xl border border-white/12 bg-white/5 px-6 py-4 text-center text-base font-semibold text-white/85 transition hover:bg-white/10 hover:text-white"
-                  >
-                    Pogledaj dashboard
-                  </Link>
-
-                  <p className="text-center text-xs text-white/50">
+                  <p className="mt-4 text-center text-xs text-white/50">
                     Prikaz sistema, alarma i izveštaja za tvoju vrstu objekta
                   </p>
                 </div>

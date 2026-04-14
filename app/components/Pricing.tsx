@@ -271,10 +271,10 @@ export default function Pricing() {
                 <div className="mt-auto flex flex-col gap-3">
                   <Link
                     href="/zakazi-demo"
-                    className={`rounded-2xl px-5 py-3 text-center text-sm font-bold transition duration-300 hover:scale-[1.02] ${
+                    className={`rounded-2xl border px-5 py-3 text-center text-sm font-bold transition duration-300 hover:scale-[1.02] ${
                       isHighlight
-                        ? "bg-yellow-400 text-black shadow-[0_14px_34px_rgba(250,204,21,0.25)] hover:shadow-[0_18px_40px_rgba(250,204,21,0.35)]"
-                        : "bg-white/90 text-[#071521] shadow-[0_10px_24px_rgba(255,255,255,0.10)] hover:bg-white"
+                        ? "border-yellow-400 bg-yellow-400 text-black shadow-[0_14px_34px_rgba(250,204,21,0.25)] hover:shadow-[0_18px_40px_rgba(250,204,21,0.35)]"
+                        : "border-cyan-400/30 bg-[#0B1B2B] text-white shadow-[0_10px_24px_rgba(0,0,0,0.28)] hover:bg-[#10263A]"
                     }`}
                   >
                     Zakaži demo

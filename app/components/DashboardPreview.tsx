@@ -475,21 +475,12 @@ export default function DashboardPreview() {
             </h3>
           </div>
 
-          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-            <Link
-              href="/login"
-              className="rounded-2xl bg-yellow-400 px-5 py-3 text-center text-sm font-bold text-black transition hover:scale-[1.02]"
-            >
-              Zakaži demo
-            </Link>
-
-            <Link
-              href="/dashboard"
-              className="rounded-2xl border border-slate-200 bg-[#0B1B2B] px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#123A5A]"
-            >
-              Pogledaj dashboard
-            </Link>
-          </div>
+          <Link
+            href="/login"
+            className="inline-flex min-w-[160px] items-center justify-center rounded-2xl bg-yellow-400 px-5 py-3 text-center text-sm font-bold text-black transition hover:scale-[1.02]"
+          >
+            Zakaži demo
+          </Link>
         </div>
       </div>
     </section>
