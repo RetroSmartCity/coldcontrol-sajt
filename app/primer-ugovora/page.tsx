@@ -1,3 +1,5 @@
+
+"use client";
 export default function PrimerUgovoraPage() {
   return (
     <main className="min-h-screen bg-[#071521] text-white px-4 py-12 sm:px-6 lg:px-8">
