@@ -101,6 +101,11 @@ export default function Hero() {
   <span className="mt-2 block text-yellow-400">
     bez rizika za robu i poslovanje
   </span>
+<h1 className="mb-5 text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+  Sigurna kontrola temperature
+  <span className="mt-2 block text-yellow-400">
+    bez rizika za robu i poslovanje
+  </span>
 </h1>
 
 <p className="mb-8 max-w-[580px] text-lg leading-8 text-white/80 lg:text-[20px]">
@@ -108,7 +113,6 @@ export default function Hero() {
   sa više lokacija — uz automatske alarme, evidenciju merenja i potpunu
   kontrolu sistema iz jedne platforme.
 </p>
-
           <div className="mb-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
               <p className="mb-1 text-[15px] font-semibold text-white">Alarm sistem</p>
