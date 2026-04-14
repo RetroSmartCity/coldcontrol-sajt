@@ -49,6 +49,13 @@ export default function Footer() {
               >
                 Zakaži demo
               </Link>
+
+              <Link
+                href="/primer-ugovora"
+                className="rounded-2xl border border-white/12 bg-white/5 px-5 py-3 text-center text-sm font-semibold text-white/90 transition hover:scale-[1.02] hover:bg-white/10 hover:text-white"
+              >
+                Primer ugovora
+              </Link>
             </div>
           </div>
 
@@ -143,6 +150,9 @@ export default function Footer() {
             </Link>
             <Link href="/#kontakt" className="transition hover:text-white">
               Kontakt
+            </Link>
+            <Link href="/primer-ugovora" className="transition hover:text-white">
+              Primer ugovora
             </Link>
             <a href="mailto:info@coldcontrol.rs" className="transition hover:text-white">
               info@coldcontrol.rs
