@@ -476,7 +476,7 @@ export default function DashboardPreview() {
           </div>
 
           <Link
-            href="/login"
+            href="/zakazi-demo"
             className="inline-flex min-w-[160px] items-center justify-center rounded-2xl bg-yellow-400 px-5 py-3 text-center text-sm font-bold text-black transition hover:scale-[1.02]"
           >
             Zakaži demo

@@ -79,7 +79,7 @@ export default function CTA() {
 
                 <div className="mt-8">
                   <Link
-                    href="/login"
+                    href="/zakazi-demo"
                     className="block rounded-2xl bg-yellow-400 px-6 py-4 text-center text-base font-bold text-black shadow-[0_12px_30px_rgba(250,204,21,0.25)] transition hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(250,204,21,0.30)]"
                   >
                     Zakaži demo
