@@ -25,9 +25,9 @@ export default function CTA() {
               </h2>
 
               <p className="mt-5 max-w-2xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
-                Dobij realan pregled temperature u svim objektima, automatske
+                Imate realan pregled temperature u svim objektima, automatske
                 alarme pri odstupanju, jasnu evidenciju merenja i bolji pregled
-                sistema za svakodnevni rad i odgovorne osobe.
+                sistema za svakodnevni rad.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3 sm:gap-4">
