@@ -2,75 +2,87 @@ import Link from "next/link";
 
 const plans = [
   {
-    name: "Apoteka",
-    subtitle: "Najbolji ulazak u sistem za jednu lokaciju ili početno uvođenje",
+    name: "Početni paket",
+    subtitle: "Za jednu lokaciju i brz, jednostavan ulazak u sistem",
     price: "99€",
-    monthly: "12€ mesečno minimum",
-    note: "Promo period važi za prvih 100 apoteka. U cenu ulazi uređaj sa 3 senzora, besplatna instalacija i osnovna obuka. Garancija na uređaje traje 12 meseci, dok održavanje sistema i cloud pristup kreću odmah po aktivaciji sistema.",
+    oldPrice: "199€",
+    monthly: "12€ mesečno",
+    badge: "Promo ponuda",
     highlight: false,
-    badge: "Promo period",
+    accent: "cyan",
+    description:
+      "Odličan izbor za korisnike koji žele da uvedu digitalno praćenje temperature bez komplikovanog početka i bez velikog početnog ulaganja.",
+    note:
+      "U promo ponudi uređaj je dostupan po ceni od 99€, umesto redovne cene od 199€.",
     features: [
       "Uređaj sa 3 senzora uključen u cenu",
-      "Minimum 3 senzora po uređaju",
-      "Besplatna instalacija",
-      "Besplatna osnovna obuka",
+      "Besplatna instalacija na lokaciji",
+      "Osnovna obuka za korišćenje sistema",
+      "Cloud pregled temperature i statusa",
+      "Automatski alarm pri odstupanju",
+      "Istorija merenja na jednom mestu",
       "Garancija na uređaje 12 meseci",
-      "Praćenje temperature 24/7",
-      "Alarm pri odstupanju temperature",
-      "Cloud pregled i istorija merenja",
     ],
     extra: [
-      "Mesečno održavanje 4€ po senzoru",
-      "Osnovni minimum je 12€ mesečno po uređaju",
-      "Dodatni senzor 30€ jednokratno",
+      "Jednostavan mesečni model za cloud i održavanje",
+      "Sistem je odmah spreman za realan rad",
+      "Kasnije proširenje je lako i pregledno",
     ],
   },
   {
-    name: "Više lokacija",
-    subtitle: "Za korisnike koji žele ozbiljniji pregled više frižidera, prostorija ili objekata",
-    price: "99€ + proširenje",
-    monthly: "4€ po senzoru mesečno",
-    note: "Osnovni uređaj dolazi sa 3 senzora. Svaki dodatni senzor se doplaćuje 30€ jednokratno. Održavanje sistema i cloud pristup naplaćuju se od početka korišćenja sistema.",
+    name: "Prošireni paket",
+    subtitle: "Za više frižidera, više zona i ozbiljniji svakodnevni rad",
+    price: "Početak od 99€",
+    oldPrice: "",
+    monthly: "4€ po senzoru",
+    badge: "Najčešći izbor",
     highlight: true,
-    badge: "Najtraženije",
+    accent: "yellow",
+    description:
+      "Praktično rešenje za korisnike kojima je potreban veći broj mernih tačaka i bolji pregled sistema kroz više senzora, uređaja ili lokacija.",
+    note:
+      "Osnovni uređaj dolazi sa 3 senzora, a dodatni senzori se uključuju po potrebi, u skladu sa objektom i organizacijom rada.",
     features: [
-      "Početak od promo uređaja sa 3 senzora",
-      "Dodatni senzor 30€ jednokratno",
-      "Minimum 3 senzora po uređaju",
-      "Mesečno održavanje 4€ po senzoru",
-      "Pregled više mernih tačaka",
+      "Početni uređaj sa 3 senzora",
+      "Dodavanje dodatnih senzora po potrebi",
+      "Bolji pregled više tačaka merenja",
       "Centralni cloud dashboard",
       "Istorija, status i alarm logika",
-      "Lako proširenje sistema po potrebi",
+      "Lakše praćenje više frižidera ili zona",
+      "Prilagođavanje rastu sistema",
     ],
     extra: [
-      "Pogodno za objekte sa više frižidera ili više zona",
-      "Jasna računica bez skrivenih troškova",
-      "Sistem raste kako raste potreba korisnika",
+      "Dodatni senzor 30€ jednokratno",
+      "Pregledniji rad bez ručnog vođenja evidencije",
+      "Pogodno za korisnike koji žele ozbiljniju kontrolu",
     ],
   },
   {
-    name: "Lanci",
-    subtitle: "Za veći broj apoteka i centralno upravljanje većim sistemom",
+    name: "Lanci i veći sistemi",
+    subtitle: "Za više objekata, više lokacija i centralizovan pregled",
     price: "Po dogovoru",
-    monthly: "Već od 3€ po senzoru",
-    note: "Za lance i veće sisteme formira se posebna promo ponuda. Što je veći ukupan broj senzora i lokacija, to je povoljnija cena održavanja po senzoru. Održavanje i cloud usluga obračunavaju se od početka korišćenja sistema.",
-    highlight: false,
+    oldPrice: "",
+    monthly: "već od 3€ po senzoru",
     badge: "Za veće sisteme",
+    highlight: false,
+    accent: "cyan",
+    description:
+      "Model namenjen većim sistemima kojima je potreban organizovan pregled više objekata, više uređaja i većeg ukupnog broja senzora.",
+    note:
+      "Za veće sisteme formira se posebna ponuda u skladu sa brojem lokacija, ukupnim brojem senzora i načinom organizacije sistema.",
     features: [
       "Više lokacija i više uređaja",
-      "Minimum 3 senzora po uređaju",
       "Centralni pregled svih objekata",
-      "Već od 3€ po senzoru mesečno",
-      "Lakša kontrola većeg sistema",
-      "Prilagođavanje prema realnoj organizaciji firme",
-      "Fazno uvođenje sistema po lokacijama",
-      "Povoljniji model za veće količine",
+      "Organizacija po lokacijama i zonama",
+      "Jednostavnije upravljanje većim sistemom",
+      "Fleksibilno širenje po potrebi",
+      "Prilagođavanje strukturi firme",
+      "Povoljniji model za veći obim sistema",
     ],
     extra: [
-      "Najbolja opcija za rast sistema bez rušenja organizacije",
-      "Niža cena po senzoru za veće korisnike",
-      "Komercijalni model prilagođen lancima",
+      "Niža cena po senzoru za veće sisteme",
+      "Pogodno za postepeno uvođenje po lokacijama",
+      "Stabilan model za dugoročan rast sistema",
     ],
   },
 ];
@@ -78,53 +90,116 @@ const plans = [
 const offerHighlights = [
   {
     title: "99€",
-    text: "promo uređaj sa 3 senzora",
+    text: "promo cena uređaja",
+  },
+  {
+    title: "199€",
+    text: "redovna cena uređaja",
+  },
+  {
+    title: "3 senzora",
+    text: "uključena u početni paket",
   },
   {
     title: "30€",
-    text: "po dodatnom senzoru",
-  },
-  {
-    title: "4€",
-    text: "mesečno po senzoru",
-  },
-  {
-    title: "3€+",
-    text: "po senzoru za lance",
+    text: "dodatni senzor",
   },
 ];
 
 const starterIncludes = [
-  "Uređaj sa 3 senzora u promo ceni od 99€",
-  "Besplatna instalacija na lokaciji",
-  "Besplatna osnovna obuka za korišćenje sistema",
+  "Uređaj sa 3 senzora",
+  "Besplatna instalacija",
+  "Osnovna obuka",
   "Garancija na uređaje 12 meseci",
-  "Cloud pregled, status i alarm logika",
+  "Cloud pregled, istorija i alarm logika",
 ];
 
-const promoRules = [
-  "Promo period važi za prvih 100 apoteka.",
-  "Osnovna promo cena iznosi 99€ za uređaj sa 3 senzora.",
-  "Minimum je 3 senzora po uređaju.",
-  "Svaki dodatni senzor iznosi 30€ jednokratno.",
-  "Održavanje sistema i cloud pristup naplaćuju se od početka korišćenja sistema.",
-  "Održavanje iznosi 4€ po senzoru mesečno.",
-  "Za lance i veće sisteme cena održavanja ide već od 3€ po senzoru mesečno.",
-  "Garancija na uređaje traje 12 meseci i ne menja mesečni model održavanja.",
+const whyItMatters = [
+  {
+    title: "Bez ručnog upisivanja",
+    text:
+      "Nema više ručnog zapisivanja temperature u sveske, formulare ili tabele. Sistem automatski beleži podatke i čuva ih na jednom mestu.",
+  },
+  {
+    title: "Brži pregled stanja",
+    text:
+      "U svakom trenutku možeš da vidiš šta se dešava na lokaciji, bez proveravanja više papira, tabela i zasebnih evidencija.",
+  },
+  {
+    title: "Manje prostora za grešku",
+    text:
+      "Automatsko očitavanje i alarmi smanjuju mogućnost da se problem primeti prekasno ili da se podatak zaboravi da bude upisan.",
+  },
+];
+
+const pricingNotes = [
+  "Promo cena uređaja iznosi 99€, umesto redovne cene od 199€.",
+  "Početni paket uključuje uređaj sa 3 senzora, instalaciju i osnovnu obuku.",
+  "Garancija na uređaje traje 12 meseci.",
+  "Dodatni senzori se doplaćuju 30€ jednokratno po senzoru.",
+  "Cloud pristup i održavanje sistema uključeni su kroz jednostavan mesečni model.",
+  "Za veće sisteme i lance cena po senzoru može biti povoljnija.",
 ];
 
 const examples = [
   {
-    title: "1 uređaj / 3 senzora",
-    text: "99€ početno + 12€ mesečno održavanje od starta korišćenja",
+    title: "Jedna lokacija",
+    text:
+      "Odličan model za korisnike koji žele da krenu sa jednom lokacijom i odmah pređu na automatsko praćenje bez ručnog upisivanja temperature.",
   },
   {
-    title: "1 uređaj / 5 senzora",
-    text: "99€ + 60€ za 2 dodatna senzora + 20€ mesečno održavanje",
+    title: "Više frižidera ili zona",
+    text:
+      "Kada objekat ima više mesta koja treba nadzirati, sistem se lako širi dodavanjem dodatnih senzora bez menjanja cele logike rada.",
   },
   {
-    title: "10 uređaja / 30 senzora",
-    text: "Posebna ponuda za veći sistem i niža cena održavanja po senzoru",
+    title: "Više objekata",
+    text:
+      "Za veći broj lokacija dobijaš organizovan centralni pregled, jasniju kontrolu i bolju cenu po senzoru kroz posebno formiranu ponudu.",
+  },
+];
+
+const processSteps = [
+  {
+    step: "01",
+    title: "Dogovor i procena",
+    text:
+      "Na osnovu objekta, broja tačaka merenja i načina rada, određuje se najpraktičniji početni model sistema.",
+  },
+  {
+    step: "02",
+    title: "Instalacija i podešavanje",
+    text:
+      "Uređaj i senzori se postavljaju, sistem se povezuje i priprema za svakodnevno korišćenje.",
+  },
+  {
+    step: "03",
+    title: "Pregled i automatsko praćenje",
+    text:
+      "Temperatura se prati automatski, bez ručnog upisivanja, uz pregled istorije i alarm pri odstupanju.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Da li početni paket već dolazi spreman za rad?",
+    answer:
+      "Da. Početni paket uključuje uređaj sa 3 senzora, instalaciju i osnovnu obuku, tako da sistem može brzo da se uvede u svakodnevni rad.",
+  },
+  {
+    question: "Da li kasnije mogu da dodam još senzora?",
+    answer:
+      "Da. Sistem je napravljen tako da može da se širi po potrebi, bez komplikovanog prelaska na potpuno novo rešenje.",
+  },
+  {
+    question: "Šta zapravo dobijam u odnosu na ručno vođenje evidencije?",
+    answer:
+      "Dobijaš automatsko beleženje temperature, pregled istorije na jednom mestu i manje prostora za grešku ili propušten podatak.",
+  },
+  {
+    question: "Da li je garancija isto što i cloud i održavanje?",
+    answer:
+      "Ne. Garancija se odnosi na uređaje, dok su cloud pristup i tehnička podrška deo redovnog korišćenja sistema.",
   },
 ];
 
@@ -144,19 +219,19 @@ export default function Pricing() {
       <div className="relative mx-auto max-w-6xl">
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
           <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
-            Promo cene
+            Cene i paketi
           </span>
 
           <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-            Jasna ponuda za ulazak u sistem
-            <span className="block text-yellow-400">i ozbiljan prostor za rast</span>
+            Jednostavan početak
+            <span className="block text-yellow-400">i sistem koji lako raste dalje</span>
           </h2>
 
           <p className="text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-            Ne ideš sa komplikovanom pričom. Ulaziš sa promo uređajem od 99€,
-            dobijaš 3 senzora, instalaciju i obuku, a mesečno održavanje sistema
-            i cloud pristup kreću odmah od početka korišćenja. Garancija na uređaje
-            traje 12 meseci i predstavlja odvojenu stavku.
+            Sistem je zamišljen tako da možeš da kreneš brzo i bez komplikovanja,
+            a da kasnije lako proširiš broj senzora, uređaja ili lokacija prema
+            stvarnoj potrebi. Najvažnije je da više nema ručnog upisivanja
+            temperature i vođenja evidencije na više mesta.
           </p>
         </div>
 
@@ -164,31 +239,37 @@ export default function Pricing() {
           <div className="grid gap-6 md:grid-cols-[1fr_0.95fr] md:items-center">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-200">
-                Promo period za prvih 100 apoteka
+                Promo ponuda
               </p>
 
               <h3 className="mb-3 text-2xl font-bold sm:text-3xl">
-                Početak već od
-                <span className="ml-2 text-yellow-400">99€</span>
+                Uređaj redovno
+                <span className="ml-2 line-through text-white/45">199€</span>
+                <span className="ml-3 text-yellow-400">promo 99€</span>
               </h3>
 
               <p className="mb-3 max-w-2xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
-                U promo cenu ulazi uređaj sa 3 senzora, besplatna instalacija i
-                osnovna obuka. Garancija na uređaje traje 12 meseci. Održavanje
-                sistema i cloud pristup naplaćuju se odmah od početka korišćenja
-                sistema i iznose 4€ po senzoru mesečno, dok za lance i veće sisteme
-                cena ide već od 3€ po senzoru mesečno.
+                Početni paket je osmišljen da omogući lak ulazak u sistem bez
+                nepotrebnog opterećenja na startu. U promo cenu ulazi uređaj sa
+                3 senzora, besplatna instalacija i osnovna obuka, tako da sve bude
+                spremno za normalan rad odmah nakon postavljanja.
               </p>
 
-              <p className="text-sm text-white/60">
-                Minimum je 3 senzora po uređaju, što znači da osnovni mesečni
-                model kreće od 12€ po uređaju.
+              <p className="mb-3 text-base leading-7 text-white/68">
+                Umesto ručnog zapisivanja temperature, podaci se automatski mere,
+                beleže i čuvaju u sistemu, uz pregled istorije i alarm kada dođe
+                do odstupanja.
+              </p>
+
+              <p className="text-sm text-white/58">
+                Cloud pristup i redovno održavanje uključeni su kroz jednostavan
+                mesečni model, dok garancija na uređaje traje 12 meseci.
               </p>
             </div>
 
             <div className="rounded-[22px] border border-white/10 bg-black/10 p-4 sm:p-5">
               <p className="mb-3 text-sm uppercase tracking-[0.16em] text-white/45">
-                U promo cenu ulazi
+                U početni paket ulazi
               </p>
 
               <div className="space-y-3">
@@ -218,7 +299,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-3 lg:gap-6">
+        <div className="mb-10 grid gap-5 lg:grid-cols-3 lg:gap-6">
           {plans.map((plan) => {
             const isHighlight = plan.highlight;
 
@@ -261,23 +342,33 @@ export default function Pricing() {
                 </div>
 
                 <div
-                  className={`relative mb-6 rounded-2xl border px-4 py-4 ${
+                  className={`relative mb-5 rounded-2xl border px-4 py-4 ${
                     isHighlight
                       ? "border-yellow-400/20 bg-yellow-400/10"
                       : "border-white/10 bg-black/10"
                   }`}
                 >
-                  <p className="text-sm text-white/50">Početna cena</p>
+                  <p className="text-sm text-white/50">Cena</p>
 
-                  <p className="mt-2 text-3xl font-extrabold text-white sm:text-4xl">
+                  {plan.oldPrice ? (
+                    <p className="mt-2 text-sm text-white/45 line-through">
+                      {plan.oldPrice}
+                    </p>
+                  ) : null}
+
+                  <p className="mt-1 text-3xl font-extrabold text-white sm:text-4xl">
                     {plan.price}
                   </p>
 
-                  <p className="mt-3 text-sm font-semibold text-cyan-200">
+                  <p className="mt-2 text-sm font-semibold text-cyan-200">
                     {plan.monthly}
                   </p>
 
-                  <p className="mt-2 text-sm leading-6 text-white/60">
+                  <p className="mt-3 text-sm leading-6 text-white/70">
+                    {plan.description}
+                  </p>
+
+                  <p className="mt-3 text-sm leading-6 text-white/58">
                     {plan.note}
                   </p>
                 </div>
@@ -341,27 +432,42 @@ export default function Pricing() {
           })}
         </div>
 
-        <div className="mt-10 rounded-[24px] border border-white/10 bg-white/[0.05] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:mt-14 sm:rounded-[30px] sm:p-6 md:p-8">
+        <div className="mb-10 rounded-[24px] border border-white/10 bg-white/[0.05] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:rounded-[30px] sm:p-6 md:p-8">
+          <div className="grid gap-6 md:grid-cols-3">
+            {whyItMatters.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-white/10 bg-black/10 p-4"
+              >
+                <p className="mb-2 text-lg font-bold text-white">{item.title}</p>
+                <p className="text-sm leading-6 text-white/68">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-10 rounded-[24px] border border-white/10 bg-white/[0.05] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:rounded-[30px] sm:p-6 md:p-8">
           <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-8">
             <div>
               <p className="mb-3 text-sm uppercase tracking-[0.18em] text-white/45">
-                Pravila promo perioda
+                Kako je ponuda postavljena
               </p>
 
               <h3 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl">
-                Komercijalni model
-                <span className="block text-yellow-400">koji odmah ima smisla</span>
+                Jasna struktura
+                <span className="block text-yellow-400">bez komplikovanog objašnjavanja</span>
               </h3>
 
               <p className="text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-                Kupac odmah mora da razume tri stvari: koliko plaća ulazak,
-                koliko plaća mesečno održavanje i šta tačno pokriva garancija.
-                Zato su početna cena, mesečni model i garancija jasno odvojeni.
+                Ideja je da korisnik odmah razume šta dobija u početnom paketu,
+                kako sistem funkcioniše i na koji način kasnije može da ga proširi.
+                Umesto ručnog upisivanja temperature i razbacane evidencije, dobija
+                pregledan sistem koji olakšava svakodnevni rad.
               </p>
             </div>
 
             <div className="space-y-3">
-              {promoRules.map((item) => (
+              {pricingNotes.map((item) => (
                 <div
                   key={item}
                   className="flex items-start gap-3 rounded-2xl border border-white/10 bg-black/10 px-4 py-3"
@@ -374,14 +480,14 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div className="mt-8 rounded-[24px] border border-cyan-400/15 bg-white/[0.04] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.2)] backdrop-blur-xl sm:p-6 md:p-8">
+        <div className="mb-10 rounded-[24px] border border-cyan-400/15 bg-white/[0.04] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.2)] backdrop-blur-xl sm:p-6 md:p-8">
           <div className="mb-5 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.18em] text-cyan-200">
-              Primer računice
+              Primer primene
             </p>
             <h3 className="text-2xl font-bold sm:text-3xl">
-              Kupac odmah vidi
-              <span className="block text-yellow-400">kako se formira cena</span>
+              Sistem može da prati
+              <span className="block text-yellow-400">način na koji posao stvarno funkcioniše</span>
             </h3>
           </div>
 
@@ -398,11 +504,63 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mb-10 rounded-[24px] border border-white/10 bg-white/[0.05] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.22)] backdrop-blur-xl sm:rounded-[28px] sm:p-6 md:p-8">
+          <div className="mb-6 text-center">
+            <p className="mb-3 text-sm uppercase tracking-[0.18em] text-white/45">
+              Kako izgleda uvođenje
+            </p>
+            <h3 className="text-2xl font-bold sm:text-3xl">
+              Od dogovora do
+              <span className="block text-yellow-400">automatskog praćenja</span>
+            </h3>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            {processSteps.map((item) => (
+              <div
+                key={item.step}
+                className="rounded-2xl border border-white/10 bg-black/10 p-5"
+              >
+                <p className="mb-3 text-sm font-semibold tracking-[0.18em] text-cyan-200">
+                  {item.step}
+                </p>
+                <h4 className="mb-2 text-lg font-bold">{item.title}</h4>
+                <p className="text-sm leading-6 text-white/70">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-8 rounded-[24px] border border-white/10 bg-white/[0.05] p-5 shadow-[0_20px_70px_rgba(0,0,0,0.22)] backdrop-blur-xl sm:rounded-[28px] sm:p-6 md:p-8">
+          <div className="mb-6 text-center">
+            <p className="mb-3 text-sm uppercase tracking-[0.18em] text-white/45">
+              Česta pitanja
+            </p>
+            <h3 className="text-2xl font-bold sm:text-3xl">
+              Ono što korisnike
+              <span className="block text-yellow-400">najčešće zanima</span>
+            </h3>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((item) => (
+              <div
+                key={item.question}
+                className="rounded-2xl border border-white/10 bg-black/10 p-4"
+              >
+                <p className="mb-2 text-base font-bold text-white">{item.question}</p>
+                <p className="text-sm leading-6 text-white/68">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center">
           <p className="mx-auto max-w-3xl text-sm leading-7 text-white/50 sm:text-base">
-            Prikazane cene važe u promo periodu. Konačna ponuda za veće sisteme
-            zavisi od broja lokacija, ukupnog broja senzora, načina alarma i
-            organizacije prikaza u dashboard-u.
+            Prikazane cene i paketi služe kao jasan orijentir. Konačna ponuda za
+            veće sisteme zavisi od broja lokacija, ukupnog broja senzora i načina
+            organizacije sistema, ali logika ostaje ista: preglednije, jednostavnije
+            i bez ručnog upisivanja temperature.
           </p>
         </div>
       </div>
