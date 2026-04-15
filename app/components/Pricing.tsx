@@ -191,16 +191,16 @@ const faqs = [
     answer:
       "Da. Sistem je napravljen tako da može da se širi po potrebi, bez komplikovanog prelaska na potpuno novo rešenje.",
   },
-  {
-    question: "Šta zapravo dobijam u odnosu na ručno vođenje evidencije?",
-    answer:
-      "Dobijaš automatsko beleženje temperature, pregled istorije na jednom mestu i manje prostora za grešku ili propušten podatak.",
-  },
-  {
-    question: "Da li je garancija isto što i cloud i održavanje?",
-    answer:
-      "Ne. Garancija se odnosi na uređaje, dok su cloud pristup i tehnička podrška deo redovnog korišćenja sistema.",
-  },
+{
+  question: "Šta se menja u odnosu na ručno vođenje evidencije?",
+  answer:
+    "Umesto da temperaturu proveravaš i upisuješ ručno, sistem je meri i beleži automatski. Svi podaci su na jednom mestu, bez dodatnog posla i bez rizika da nešto ostane neupisano.",
+},
+{
+  question: "Zašto je kontinuirano merenje bitno?",
+  answer:
+    "Kod klasičnog merenja vidiš samo temperaturu u trenutku kada je proveriš. Sve između tih merenja ostaje nepoznato. Kontinuirano merenje prati temperaturu stalno, tokom celog dana i noći, pa se svako odstupanje odmah vidi i ne može da prođe neprimećeno.",
+},
 ];
 
 export default function Pricing() {
