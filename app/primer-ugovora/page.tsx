@@ -140,7 +140,7 @@ export default function PrimerUgovoraPage() {
 
               <p className="mt-3">
                 Za veće sisteme, lance i veći ukupan broj senzora može biti definisan
-                povoljniji model, već od <strong>3€ po senzoru mesečno</strong>, u
+                povoljniji model, već od <strong>3,2€ po senzoru mesečno</strong>, u
                 skladu sa posebnim dogovorom i ponudom.
               </p>
             </section>
