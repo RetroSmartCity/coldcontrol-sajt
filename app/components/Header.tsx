@@ -55,14 +55,14 @@ export default function Header() {
         >
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-xl" />
-           <Image
-  src="/images/logo-header-tight.webp"
-  alt="ColdControl Systems"
-  width={180}
-  height={48}
-  className="h-auto w-auto"
-  priority
-/>
+            <Image
+              src="/images/logo-header-tight.webp"
+              alt="ColdControl Systems"
+              width={180}
+              height={48}
+              className="h-auto w-auto"
+              priority
+            />
           </div>
         </Link>
 
@@ -73,11 +73,12 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
+          {/* 🔥 OTVORI APLIKACIJU */}
           <Link
-            href="/login"
+            href="https://app.coldcontrol.app"
             className="hidden sm:inline-flex rounded-2xl border border-white/12 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white/85 backdrop-blur-sm transition hover:bg-white/10 hover:text-white"
           >
-            Prijava
+            Otvori aplikaciju
           </Link>
 
           <Link
@@ -136,12 +137,13 @@ export default function Header() {
               );
             })}
 
+            {/* 🔥 MOBILE */}
             <Link
-              href="/login"
+              href="https://app.coldcontrol.app"
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-white/85"
             >
-              Prijava
+              Otvori aplikaciju
             </Link>
 
             <Link
