@@ -1,5 +1,11 @@
 import DemoRequestForm from "../components/demo-request/DemoRequestForm";
 
+export const metadata = {
+  title: "Zakaži demo | ColdControl",
+  description:
+    "Zakažite demo ColdControl sistema za praćenje temperature, alarmiranje i automatsku evidenciju merenja.",
+};
+
 export default function ZakaziDemoPage() {
   return (
     <main className="min-h-screen bg-[#071521] px-6 py-16 text-white">
