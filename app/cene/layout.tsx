@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Zakaži demo | ColdControl",
+  title: "Cene | ColdControl",
   description:
-    "Zakažite demo ColdControl sistema za automatsko praćenje temperature u apotekama.",
+    "Pogledajte cene ColdControl sistema za praćenje temperature i mesečno održavanje.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
