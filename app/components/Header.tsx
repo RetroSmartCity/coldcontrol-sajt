@@ -14,7 +14,8 @@ export default function Header() {
       { href: "/", label: "Početna" },
       { href: "/#proizvod", label: "Proizvod" },
       { href: "/#resenja", label: "Rešenja" },
-      { href: "/#cene", label: "Cene" },
+      { href: "/cene", label: "Cene" },
+      { href: "/primer-ugovora", label: "Ugovor" },
       { href: "/#kontakt", label: "Kontakt" },
     ],
     []
@@ -22,6 +23,8 @@ export default function Header() {
 
   const isActiveLink = (href: string) => {
     if (href === "/") return pathname === "/";
+    if (href === "/cene") return pathname === "/cene";
+    if (href === "/primer-ugovora") return pathname === "/primer-ugovora";
     return pathname === href;
   };
 
@@ -73,13 +76,12 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* 🔥 OTVORI APLIKACIJU */}
-        <Link
-  href="https://app.coldcontrol.app/login"
-  className="hidden sm:inline-flex rounded-2xl border border-white/12 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white/85 backdrop-blur-sm transition hover:bg-white/10 hover:text-white"
->
-  Otvori aplikaciju
-</Link>
+          <Link
+            href="https://app.coldcontrol.app/login"
+            className="hidden sm:inline-flex rounded-2xl border border-white/12 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white/85 backdrop-blur-sm transition hover:bg-white/10 hover:text-white"
+          >
+            Otvori aplikaciju
+          </Link>
 
           <Link
             href="/zakazi-demo"
@@ -95,21 +97,9 @@ export default function Header() {
             className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10 lg:hidden"
           >
             <span className="relative block h-4 w-5">
-              <span
-                className={`absolute left-0 top-0 h-[2px] w-5 rounded-full bg-white transition ${
-                  mobileOpen ? "translate-y-[7px] rotate-45" : ""
-                }`}
-              />
-              <span
-                className={`absolute left-0 top-[7px] h-[2px] w-5 rounded-full bg-white transition ${
-                  mobileOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`absolute left-0 top-[14px] h-[2px] w-5 rounded-full bg-white transition ${
-                  mobileOpen ? "-translate-y-[7px] -rotate-45" : ""
-                }`}
-              />
+              <span className={`absolute left-0 top-0 h-[2px] w-5 rounded-full bg-white transition ${mobileOpen ? "translate-y-[7px] rotate-45" : ""}`} />
+              <span className={`absolute left-0 top-[7px] h-[2px] w-5 rounded-full bg-white transition ${mobileOpen ? "opacity-0" : ""}`} />
+              <span className={`absolute left-0 top-[14px] h-[2px] w-5 rounded-full bg-white transition ${mobileOpen ? "-translate-y-[7px] -rotate-45" : ""}`} />
             </span>
           </button>
         </div>
@@ -137,9 +127,8 @@ export default function Header() {
               );
             })}
 
-            {/* 🔥 MOBILE */}
             <Link
-              href="https://app.coldcontrol.app"
+              href="https://app.coldcontrol.app/login"
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-white/85"
             >

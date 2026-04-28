@@ -3,8 +3,9 @@ import Link from "next/link";
 const navItems = [
   { href: "/#proizvod", label: "Proizvod" },
   { href: "/#resenja", label: "Rešenja" },
-  { href: "/#cene", label: "Cene" },
+  { href: "/cene", label: "Cene sistema" },
   { href: "/zakazi-demo", label: "Zakaži demo" },
+  { href: "/primer-ugovora", label: "Ugovor" },
 ];
 
 const contactItems = [
@@ -144,20 +145,26 @@ export default function Footer() {
         <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/45 md:mt-10 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} ColdControl Systems. Sva prava zadržana.</p>
 
-          <div className="flex flex-wrap items-center gap-4 sm:gap-5">
-            <Link href="/" className="transition hover:text-white">
-              Početna
-            </Link>
-            <Link href="/#kontakt" className="transition hover:text-white">
-              Kontakt
-            </Link>
-            <Link href="/primer-ugovora" className="transition hover:text-white">
-              Primer ugovora
-            </Link>
-            <a href="mailto:info@coldcontrol.rs" className="transition hover:text-white">
-              info@coldcontrol.rs
-            </a>
-          </div>
+<div className="flex flex-wrap items-center gap-4 sm:gap-5">
+  <Link href="/" className="transition hover:text-white">
+    Početna
+  </Link>
+  <Link href="/cene" className="transition hover:text-white">
+    Cene sistema
+  </Link>
+  <Link href="/zakazi-demo" className="transition hover:text-white">
+    Zakaži demo
+  </Link>
+  <Link href="/primer-ugovora" className="transition hover:text-white">
+    Ugovor
+  </Link>
+  <Link href="/#kontakt" className="transition hover:text-white">
+    Kontakt
+  </Link>
+  <a href="mailto:info@coldcontrol.rs" className="transition hover:text-white">
+    info@coldcontrol.rs
+  </a>
+</div>
         </div>
       </div>
     </footer>
