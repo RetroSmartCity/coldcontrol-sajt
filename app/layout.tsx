@@ -29,24 +29,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ColdControl Systems",
     description:
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "ColdControl Systems",
-  description:
-    "Sistem za praćenje temperature u realnom vremenu sa alarmima i evidencijom za inspekciju.",
+      "Profesionalan sistem za monitoring temperature u realnom vremenu sa alarmima, cloud dashboard-om i pregledom više lokacija.",
+    url: "https://www.coldcontrol.app",
+    siteName: "ColdControl Systems",
+    locale: "sr_RS",
+    type: "website",
+  },
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32" },
@@ -67,7 +55,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* 🔥 SEO SCHEMA ZA SITELINKS */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
