@@ -47,15 +47,17 @@ export default function PrimerUgovoraPage() {
             </div>
 
             <div>
-              <p><strong>Pružalac usluge:</strong> ______________________________</p>
-              <p className="mt-2">Adresa: ______________________________</p>
-              <p className="mt-2">PIB: ______________________________</p>
+              <p><strong>Pružalac usluge:</strong> Nevena Kapelan pr Kristal369</p>
+              <p className="mt-2">Adresa: MILA MANIĆA-ALBANTE 36, 11000, Skela, Srbija</p>
+              <p className="mt-2">PIB: 111536773</p>
+              <p className="mt-2">MB: 65484153</p>
             </div>
 
             <div className="sm:col-span-2">
               <p><strong>Korisnik:</strong> ______________________________</p>
               <p className="mt-2">Adresa: ______________________________</p>
               <p className="mt-2">PIB: ______________________________</p>
+              <p className="mt-2">MB: ______________________________</p>
             </div>
           </div>
 
@@ -222,6 +224,7 @@ export default function PrimerUgovoraPage() {
           <div className="mt-12 grid gap-10 border-t border-slate-200 pt-8 text-sm sm:grid-cols-2">
             <div>
               <p className="font-semibold">Pružalac usluge:</p>
+              <p className="mt-2">Nevena Kapelan pr Kristal369</p>
               <p className="mt-10">______________________________</p>
             </div>
 
