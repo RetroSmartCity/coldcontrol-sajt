@@ -30,6 +30,22 @@ export default function CTA() {
                 sistema za svakodnevni rad.
               </p>
 
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/kontrola-temperature-u-apotekama"
+                  className="inline-flex items-center justify-center rounded-2xl border border-yellow-400/30 bg-yellow-400/10 px-5 py-3 text-sm font-bold text-yellow-300 transition hover:bg-yellow-400 hover:text-black"
+                >
+                  Zašto ručno merenje nije dovoljno
+                </Link>
+
+                <Link
+                  href="/cene"
+                  className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/5 px-5 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10 hover:text-white"
+                >
+                  Pogledaj cene sistema
+                </Link>
+              </div>
+
               <div className="mt-8 grid gap-3 sm:grid-cols-3 sm:gap-4">
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-4">
                   <p className="mb-1 text-sm font-semibold text-white">
@@ -83,6 +99,13 @@ export default function CTA() {
                     className="block rounded-2xl bg-yellow-400 px-6 py-4 text-center text-base font-bold text-black shadow-[0_12px_30px_rgba(250,204,21,0.25)] transition hover:scale-[1.02] hover:shadow-[0_16px_36px_rgba(250,204,21,0.30)]"
                   >
                     Zakaži demo
+                  </Link>
+
+                  <Link
+                    href="/kontrola-temperature-u-apotekama"
+                    className="mt-3 block rounded-2xl border border-white/12 bg-white/5 px-6 py-3.5 text-center text-sm font-semibold text-white/85 transition hover:bg-white/10 hover:text-white"
+                  >
+                    Pogledaj primer: ručno vs kontinuirano
                   </Link>
 
                   <p className="mt-4 text-center text-xs text-white/50">

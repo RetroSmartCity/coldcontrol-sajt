@@ -14,6 +14,7 @@ export default function Header() {
       { href: "/", label: "Početna" },
       { href: "/#proizvod", label: "Proizvod" },
       { href: "/#resenja", label: "Rešenja" },
+      { href: "/kontrola-temperature-u-apotekama", label: "Apoteke" },
       { href: "/cene", label: "Cene" },
       { href: "/primer-ugovora", label: "Ugovor" },
       { href: "/#kontakt", label: "Kontakt" },
@@ -25,6 +26,8 @@ export default function Header() {
     if (href === "/") return pathname === "/";
     if (href === "/cene") return pathname === "/cene";
     if (href === "/primer-ugovora") return pathname === "/primer-ugovora";
+    if (href === "/kontrola-temperature-u-apotekama")
+      return pathname === "/kontrola-temperature-u-apotekama";
     return pathname === href;
   };
 
@@ -69,7 +72,7 @@ export default function Header() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {navItems.map((item) => (
             <div key={item.href}>{navLink(item.href, item.label)}</div>
           ))}
