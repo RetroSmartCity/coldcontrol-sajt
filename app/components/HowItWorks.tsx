@@ -2,21 +2,24 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Postavi senzor",
+      title: "Uređaj se povezuje na lokalnu WiFi mrežu",
       description:
-        "WiFi senzor se brzo postavlja u frižider, rashladnu vitrinu ili hladnjaču bez komplikovane instalacije.",
+        "Centralni uređaj se postavlja u objektu i povezuje na postojeću WiFi mrežu bez dodatne infrastrukture. On obezbeđuje slanje podataka ka ColdControl platformi.",
+      note: "Stabilna lokalna konekcija",
     },
     {
       number: "02",
-      title: "Podaci idu u cloud",
+      title: "Senzor meri temperaturu u frižideru",
       description:
-        "Temperatura se automatski šalje na server i prikazuje u kontrolnoj tabli u realnom vremenu.",
+        "Temperaturni senzor se postavlja u farmaceutski frižider i kontinuirano prati uslove čuvanja vakcina, lekova i drugih termolabilnih proizvoda u opsegu 2–8°C.",
+      note: "Kontinuirano merenje 24/7",
     },
     {
       number: "03",
-      title: "Alarm reaguje odmah",
+      title: "Podaci, alarmi i evidencija",
       description:
-        "Ako temperatura izađe iz dozvoljenog opsega, sistem odmah šalje upozorenje odgovornoj osobi.",
+        "Podaci se automatski šalju u cloud sistem, gde su dostupni istorija merenja, min/max vrednosti, alarmi pri odstupanju i evidencija za internu kontrolu.",
+      note: "Dokaz i reakcija u realnom vremenu",
     },
   ];
 
@@ -37,12 +40,13 @@ export default function HowItWorks() {
           </span>
 
           <h2 className="mb-5 text-3xl font-bold text-[#0B1B2B] sm:text-4xl md:text-5xl">
-            Jednostavno od merenja do alarma
+            Kontrola temperature – od merenja do dokaza
           </h2>
 
           <p className="text-base leading-7 text-slate-600 sm:text-lg sm:leading-relaxed">
-            Sistem je napravljen da bude lak za postavljanje, pregledan za korišćenje
-            i brz kada treba da reaguje na problem.
+            ColdControl razdvaja merni deo i komunikacioni deo sistema: senzor
+            meri temperaturu u frižideru, uređaj šalje podatke u cloud, a
+            odgovorno lice dobija pregled, alarme i evidenciju na jednom mestu.
           </p>
         </div>
 
@@ -66,9 +70,9 @@ export default function HowItWorks() {
 
               <p className="leading-7 text-slate-600">{step.description}</p>
 
-              <div className="mt-8 flex items-center gap-2 text-sm font-medium text-[#123A5A] opacity-80">
-                <span className="inline-block h-2.5 w-2.5 rounded-full bg-yellow-400" />
-                <span>Brzo i pregledno</span>
+              <div className="mt-8 flex items-center gap-2 text-sm font-medium text-[#123A5A] opacity-90">
+                <span className="inline-block h-2.5 w-2.5 rounded-full bg-cyan-400" />
+                <span>{step.note}</span>
               </div>
             </div>
           ))}
@@ -78,37 +82,40 @@ export default function HowItWorks() {
           <div className="grid gap-8 md:grid-cols-3">
             <div>
               <p className="mb-3 text-sm uppercase tracking-[0.18em] text-slate-500">
-                24/7 nadzor
+                Kontinuirani nadzor
               </p>
               <h4 className="mb-2 text-xl font-bold text-[#0B1B2B] sm:text-2xl">
-                Stalna kontrola
+                Temperatura 24/7
               </h4>
               <p className="leading-7 text-slate-600">
-                Nema ručnog proveravanja temperature više puta dnevno.
+                Sistem prati temperaturu tokom celog dana i noći, umesto da se
+                oslanja samo na ručno očitavanje u određenim terminima.
               </p>
             </div>
 
             <div>
               <p className="mb-3 text-sm uppercase tracking-[0.18em] text-slate-500">
-                Cloud pristup
+                Evidencija
               </p>
               <h4 className="mb-2 text-xl font-bold text-[#0B1B2B] sm:text-2xl">
-                Sve na jednom mestu
+                Min/max i istorija
               </h4>
               <p className="leading-7 text-slate-600">
-                Više lokacija, više senzora i kompletna istorija u jednoj tabli.
+                Podaci ostaju zabeleženi kroz istoriju merenja, minimalne i
+                maksimalne vrednosti, alarmne događaje i pregled stanja sistema.
               </p>
             </div>
 
             <div>
               <p className="mb-3 text-sm uppercase tracking-[0.18em] text-slate-500">
-                Brza reakcija
+                Reakcija
               </p>
               <h4 className="mb-2 text-xl font-bold text-[#0B1B2B] sm:text-2xl">
-                Manji rizik
+                Alarm pri odstupanju
               </h4>
               <p className="leading-7 text-slate-600">
-                Problem se vidi odmah, pre nego što dođe do kvara robe ili inspekcijskog problema.
+                Kada temperatura izađe iz definisanog opsega, sistem šalje
+                upozorenje i čuva trag događaja za kasniji pregled i kontrolu.
               </p>
             </div>
           </div>
