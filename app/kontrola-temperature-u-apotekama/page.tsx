@@ -170,6 +170,45 @@ export default function KontrolaTemperatureApotekePage() {
                       a ne samo trenutno stanje u trenutku ručnog upisa.
                     </p>
                   </div>
+
+                  <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-4">
+                    <p className="text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
+                      Citat iz GDP smernica
+                    </p>
+                    <p className="mt-2 italic leading-7 text-slate-700">
+                      “An initial temperature mapping exercise should be carried
+                      out on the storage area before use, under representative
+                      conditions.”
+                    </p>
+                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                      Prevod: početno temperaturno mapiranje prostora treba
+                      uraditi pre upotrebe, u reprezentativnim uslovima.
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      Objašnjenje: senzor ne treba postavljati nasumično.
+                      U ozbiljnom sistemu prvo se razume temperaturno ponašanje
+                      rashladnog prostora i kritične zone.
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-4">
+                    <p className="text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
+                      Citat iz GDP smernica
+                    </p>
+                    <p className="mt-2 italic leading-7 text-slate-700">
+                      “Equipment used to control or to monitor the environment
+                      should be maintained and calibrated at defined intervals.”
+                    </p>
+                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                      Prevod: oprema koja kontroliše ili prati uslove okruženja
+                      treba da se održava i proverava u definisanim intervalima.
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      Objašnjenje: sistem za praćenje mora imati proverljiv rad,
+                      pouzdanu evidenciju i podatke koji se mogu pokazati pri
+                      internoj kontroli ili inspekciji.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -205,15 +244,16 @@ export default function KontrolaTemperatureApotekePage() {
               </span>
 
               <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-                Standardna procedura za kontrolu temperature u frižiderima
-                apoteka
+                Standardna operativna procedura za kontrolu temperature u
+                farmaceutskim frižiderima
               </h2>
 
               <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">
-                SOP definiše kako se temperatura prati, kako se postupa kod
-                alarma i kako se čuvaju zapisi. Cilj je da apoteka ima jasan,
-                ponovljiv i proverljiv postupak, a ne samo aplikaciju za prikaz
-                temperature.
+                SOP definiše postupak kontinuiranog nadzora temperaturnih uslova
+                u rashladnim uređajima u kojima se čuvaju vakcine, biološki
+                proizvodi i druge termolabilne farmaceutske supstance. Cilj je
+                da apoteka ima jasan, ponovljiv i proverljiv proces, a ne samo
+                ekran sa trenutnom temperaturom.
               </p>
             </div>
 
@@ -228,9 +268,10 @@ export default function KontrolaTemperatureApotekePage() {
                 </h3>
 
                 <p className="mt-5 leading-8 text-white/70">
-                  Procedura se koristi za frižidere u kojima se čuvaju lekovi
-                  koji zahtevaju kontrolisane temperaturne uslove. U SOP-u su
-                  definisani opseg, odgovornosti, alarmi, evidencija i izveštaji.
+                  Procedura se primenjuje na rashladne uređaje namenjene čuvanju
+                  proizvoda osetljivih na temperaturna odstupanja. U SOP-u su
+                  definisani opseg primene, odgovornosti, način nadzora, alarmi,
+                  evidencija, audit trag i izveštaji za proveru uslova čuvanja.
                 </p>
 
                 <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -238,9 +279,10 @@ export default function KontrolaTemperatureApotekePage() {
                     Glavna poenta SOP-a
                   </p>
                   <p className="mt-2 text-sm leading-6 text-white/70">
-                    Temperatura se ne proverava samo povremeno, već se prati
-                    kontinuirano i automatski beleži, kako bi postojala istorija
-                    uslova čuvanja.
+                    Temperaturni uslovi se ne procenjuju samo kroz povremeni
+                    ručni upis, već kroz kontinuirani automatski zapis koji
+                    prikazuje istoriju, min/max vrednosti, alarme i događaje
+                    tokom celog perioda čuvanja.
                   </p>
                 </div>
 
@@ -258,9 +300,11 @@ export default function KontrolaTemperatureApotekePage() {
                     1. Svrha
                   </p>
                   <p className="leading-7 text-slate-600">
-                    Obezbeđivanje uslova čuvanja lekova u opsegu 2–8°C kroz
-                    kontinuirano praćenje, automatsku evidenciju i pregled
-                    istorije temperature.
+                    Obezbeđivanje kontrolisanih uslova čuvanja vakcina,
+                    bioloških proizvoda, lekova i drugih termolabilnih
+                    farmaceutskih supstanci kroz kontinuirano praćenje
+                    temperature, automatsku evidenciju i proverljiv trag
+                    podataka.
                   </p>
                 </div>
 
@@ -269,9 +313,10 @@ export default function KontrolaTemperatureApotekePage() {
                     2. Opseg primene
                   </p>
                   <p className="leading-7 text-slate-600">
-                    Procedura se primenjuje na rashladne uređaje u apoteci u
-                    kojima se čuvaju lekovi, preparati ili proizvodi koji
-                    zahtevaju kontrolisanu temperaturu.
+                    Procedura se primenjuje na sve rashladne uređaje u apoteci
+                    ili zdravstvenom objektu koji se koriste za skladištenje
+                    farmaceutskih proizvoda sa definisanim temperaturnim režimom,
+                    posebno proizvoda koji zahtevaju opseg 2–8°C.
                   </p>
                 </div>
 
@@ -280,8 +325,10 @@ export default function KontrolaTemperatureApotekePage() {
                     3. Odgovornosti
                   </p>
                   <p className="leading-7 text-slate-600">
-                    Odgovorno lice prati stanje sistema, proverava alarme i
-                    preduzima mere kada temperatura izađe iz dozvoljenog opsega.
+                    Odgovorno farmaceutsko osoblje prati stanje sistema,
+                    proverava aktivne i istorijske alarme, procenjuje odstupanja
+                    i obezbeđuje da se svaka korektivna mera evidentira u skladu
+                    sa internim procedurama objekta.
                   </p>
                 </div>
 
@@ -290,29 +337,34 @@ export default function KontrolaTemperatureApotekePage() {
                     4. Praćenje 24/7
                   </p>
                   <p className="leading-7 text-slate-600">
-                    ColdControl meri temperaturu kontinuirano, prikazuje trenutnu
-                    vrednost, istoriju kretanja, minimalne i maksimalne vrednosti.
+                    ColdControl kontinuirano meri temperaturu u rashladnom
+                    uređaju, prikazuje trenutnu vrednost, istoriju kretanja,
+                    minimalne i maksimalne vrednosti i omogućava uvid u cikluse
+                    rada frižidera tokom dana i noći.
                   </p>
                 </div>
 
                 <div className="rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
                   <p className="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-[#123A5A]">
-                    5. Alarmi
+                    5. Alarmi i odstupanja
                   </p>
                   <p className="leading-7 text-slate-600">
                     Alarm se aktivira kada temperatura izađe iz definisanog
-                    opsega. Događaj ostaje zabeležen u sistemu sa vremenom
-                    nastanka.
+                    opsega. Događaj ostaje zabeležen sa vremenom nastanka, što
+                    omogućava procenu trajanja odstupanja i bržu reakciju
+                    odgovornog osoblja.
                   </p>
                 </div>
 
                 <div className="rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)]">
                   <p className="mb-2 text-sm font-bold uppercase tracking-[0.16em] text-[#123A5A]">
-                    6. Izveštaji
+                    6. Izveštaji i evidencija
                   </p>
                   <p className="leading-7 text-slate-600">
-                    Sistem omogućava pregled istorije, min/max vrednosti, alarma
-                    i izvoz podataka za internu proveru ili pripremu za kontrolu.
+                    Sistem omogućava pregled istorije temperature, min/max
+                    vrednosti, alarma i događaja, kao i izvoz podataka za
+                    internu proveru, odgovorno lice, menadžment ili pripremu za
+                    regulatornu kontrolu.
                   </p>
                 </div>
               </div>
@@ -325,8 +377,9 @@ export default function KontrolaTemperatureApotekePage() {
                 </h3>
                 <p className="leading-7 text-slate-600">
                   Svako merenje se beleži automatski, bez oslanjanja na naknadni
-                  ručni upis. Time se smanjuje rizik od propuštenih ili pogrešno
-                  unetih vrednosti.
+                  ručni upis. Time se smanjuje rizik od propuštenih vrednosti,
+                  pogrešno unetih podataka i evidencije koja ne prikazuje realan
+                  temperaturni tok.
                 </p>
               </div>
 
@@ -335,20 +388,20 @@ export default function KontrolaTemperatureApotekePage() {
                   Audit log i trag događaja
                 </h3>
                 <p className="leading-7 text-slate-600">
-                  Sistem čuva trag merenja, alarma i događaja, što omogućava
-                  jasniji uvid u to kada je podatak nastao i šta se dešavalo
-                  tokom perioda čuvanja.
+                  Sistem čuva trag merenja, alarma i događaja. Time se dobija
+                  bolji uvid u vreme nastanka podatka, trajanje odstupanja i
+                  istoriju uslova čuvanja farmaceutskih proizvoda.
                 </p>
               </div>
 
               <div className="rounded-[26px] border border-slate-200 bg-white p-6">
                 <h3 className="mb-3 text-xl font-bold">
-                  Postupanje kod odstupanja
+                  Postupanje kod temperaturnog odstupanja
                 </h3>
                 <p className="leading-7 text-slate-600">
-                  SOP predviđa da se kod alarma proveri frižider, vrata,
-                  napajanje i stanje robe, a zatim preduzeta mera evidentira u
-                  internom postupku.
+                  SOP predviđa proveru vrata frižidera, napajanja, opterećenja
+                  rashladnog prostora, položaja proizvoda i stanja uređaja, uz
+                  evidentiranje preduzetih mera u internom postupku objekta.
                 </p>
               </div>
             </div>
