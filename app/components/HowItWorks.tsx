@@ -4,22 +4,22 @@ export default function HowItWorks() {
       number: "01",
       title: "Uređaj se povezuje na lokalnu WiFi mrežu",
       description:
-        "Centralni uređaj se postavlja u objektu i povezuje na postojeću WiFi mrežu bez dodatne infrastrukture. On obezbeđuje slanje podataka ka ColdControl platformi.",
+        "Centralni uređaj se postavlja u objektu i povezuje na postojeću WiFi mrežu bez dodatne infrastrukture. On obezbeđuje sigurno i kontinuirano slanje podataka ka ColdControl platformi.",
       note: "Lokalna WiFi konekcija bez dodatne infrastrukture",
     },
     {
       number: "02",
-      title: "Senzor meri temperaturu u frižideru",
+      title: "Senzor kontinuirano meri temperaturu",
       description:
-        "Temperaturni senzor se postavlja u farmaceutski frižider i kontinuirano prati uslove čuvanja vakcina, lekova i drugih termolabilnih proizvoda u opsegu 2–8°C.",
-      note: "Merenje direktno u frižideru u opsegu 2–8°C",
+        "Temperaturni senzor se postavlja u farmaceutski frižider i kontinuirano prati uslove čuvanja vakcina, lekova i drugih termolabilnih proizvoda u opsegu 2–8°C, bez prekida tokom dana i noći.",
+      note: "Kontinuirano merenje u realnom vremenu (2–8°C)",
     },
     {
       number: "03",
-      title: "Podaci, alarmi i evidencija",
+      title: "Automatski zapis, alarmi i evidencija",
       description:
-        "Podaci se automatski šalju u cloud sistem, gde su dostupni istorija merenja, min/max vrednosti, alarmi pri odstupanju i evidencija za internu kontrolu.",
-      note: "Automatski zapis, alarm i audit log",
+        "Podaci se automatski šalju u cloud sistem, gde se beleže istorija merenja, min/max vrednosti, alarmi pri odstupanju i kompletan audit log spreman za internu kontrolu i inspekciju.",
+      note: "Automatski zapis, alarm i audit log (EU GDP pristup)",
     },
   ];
 
@@ -44,9 +44,9 @@ export default function HowItWorks() {
           </h2>
 
           <p className="text-base leading-7 text-slate-600 sm:text-lg sm:leading-relaxed">
-            ColdControl razdvaja merni deo i komunikacioni deo sistema: senzor
-            meri temperaturu u frižideru, uređaj šalje podatke u cloud, a
-            odgovorno lice dobija pregled, alarme i evidenciju na jednom mestu.
+            ColdControl omogućava kontinuirano praćenje temperature, automatsko
+            beleženje podataka i evidenciju spremnu za proveru, u skladu sa EU
+            GDP principima.
           </p>
         </div>
 
@@ -77,6 +77,7 @@ export default function HowItWorks() {
           ))}
         </div>
 
+        {/* DONJI BLOK - GDP LOGIKA */}
         <div className="mt-10 rounded-[24px] border border-slate-200 bg-white/85 p-6 shadow-[0_12px_40px_rgba(15,23,42,0.08)] backdrop-blur-sm sm:mt-14 sm:rounded-[30px] sm:p-8 md:p-10">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
@@ -87,8 +88,8 @@ export default function HowItWorks() {
                 Temperatura 24/7
               </h4>
               <p className="leading-7 text-slate-600">
-                Sistem prati temperaturu tokom celog dana i noći, umesto da se
-                oslanja samo na ručno očitavanje u određenim terminima.
+                Sistem prati temperaturu neprekidno tokom dana i noći, za razliku
+                od ručnih očitavanja koja ne pokazuju realno stanje između merenja.
               </p>
             </div>
 
@@ -100,8 +101,8 @@ export default function HowItWorks() {
                 Min/max i istorija
               </h4>
               <p className="leading-7 text-slate-600">
-                Podaci ostaju zabeleženi kroz istoriju merenja, minimalne i
-                maksimalne vrednosti, alarmne događaje i pregled stanja sistema.
+                Svi podaci se automatski beleže – uključujući minimalne i maksimalne
+                vrednosti, odstupanja i kompletnu istoriju merenja.
               </p>
             </div>
 
@@ -110,11 +111,11 @@ export default function HowItWorks() {
                 Reakcija
               </p>
               <h4 className="mb-2 text-xl font-bold text-[#0B1B2B] sm:text-2xl">
-                Alarm pri odstupanju
+                Alarm i dokaz
               </h4>
               <p className="leading-7 text-slate-600">
-                Kada temperatura izađe iz definisanog opsega, sistem šalje
-                upozorenje i čuva trag događaja za kasniji pregled i kontrolu.
+                Sistem automatski šalje alarm pri odstupanju i čuva evidenciju,
+                obezbeđujući dokaz o uslovima čuvanja u skladu sa EU GDP zahtevima.
               </p>
             </div>
           </div>

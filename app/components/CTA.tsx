@@ -20,23 +20,28 @@ export default function CTA() {
               </div>
 
               <h2 className="max-w-3xl text-2xl font-bold leading-tight sm:text-3xl md:text-5xl">
-                Sistem koji obezbeđuje dokaz o uslovima čuvanja
+                Imate dokaz o temperaturi
                 <span className="block text-yellow-400">
-                  u skladu sa EU GDP smernicama
+                  ili samo zapis u svesci?
                 </span>
               </h2>
 
               <p className="mt-5 max-w-2xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
-                ColdControl omogućava kontinuirano praćenje temperature,
-                automatski zapis i jasan pregled podataka koji se može koristiti
-                za internu kontrolu i pripremu za inspekciju.
+                EU GDP zahteva kontinuirano praćenje temperature i dokaz o
+                uslovima čuvanja. Ručna merenja u 8h i 14h ne pokazuju šta se
+                dešavalo između.
+              </p>
+
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
+                ColdControl obezbeđuje automatsko beleženje, istoriju merenja i
+                izveštaje spremne za inspekciju — bez ručnog vođenja evidencije.
               </p>
 
               {/* 🔥 GDP FEATURE LIST */}
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
 
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-3 text-sm">
-                  ✔ 24/7 kontinuirano praćenje temperature
+                  ✔ Kontinuirano merenje temperature 24/7
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-3 text-sm">
@@ -48,18 +53,16 @@ export default function CTA() {
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-3 text-sm">
+                  ✔ Alarm pri svakom odstupanju
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-3 text-sm">
                   ✔ Audit log i istorija događaja
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-3 text-sm">
-                  ✔ Alarm pri odstupanju temperature
+                  ✔ Izveštaji spremni za inspekciju
                 </div>
-
-                <div className="rounded-2xl border border-white/10 bg-black/10 px-4 py-3 text-sm">
-                  ✔ Izveštaji spremni za kontrolu
-                </div>
-
-             
 
               </div>
 
@@ -84,12 +87,12 @@ export default function CTA() {
                 </p>
 
                 <h3 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-                  Zakaži demo i pogledaj sistem u radu
+                  Pogledajte kako sistem radi u realnom okruženju
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/65 md:text-base">
-                  Pregled dashboard-a, alarma, istorije merenja i načina kako se
-                  sistem koristi u realnim uslovima.
+                  Prikaz dashboard-a, alarma, istorije merenja i načina kako
+                  izgleda evidencija koja se koristi za kontrolu i inspekciju.
                 </p>
 
                 <div className="mt-8">
@@ -101,14 +104,14 @@ export default function CTA() {
                   </Link>
 
                   <p className="mt-4 text-center text-xs text-white/50">
-                    Prikaz sistema, alarma i izveštaja za tvoju vrstu objekta
+                    Bez obaveze • Demo prilagođen vašem objektu
                   </p>
                 </div>
 
                 <div className="mt-8 space-y-3 border-t border-white/10 pt-6">
                   <div className="flex items-center gap-3 text-sm text-white/70">
                     <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
-                    <span>Real-time monitoring</span>
+                    <span>Kontinuirano praćenje</span>
                   </div>
 
                   <div className="flex items-center gap-3 text-sm text-white/70">
@@ -131,7 +134,7 @@ export default function CTA() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-center text-sm text-white/45 sm:gap-6">
           <span>EU GDP compliant</span>
           <span className="h-1.5 w-1.5 rounded-full bg-white/20" />
-          <span>Kalibracija senzora</span>
+          <span>Kontinuirano merenje</span>
           <span className="h-1.5 w-1.5 rounded-full bg-white/20" />
           <span>Audit log</span>
         </div>

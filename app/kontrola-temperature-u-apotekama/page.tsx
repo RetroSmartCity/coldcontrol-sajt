@@ -18,7 +18,7 @@ export default function KontrolaTemperatureApotekePage() {
           <div className="relative mx-auto max-w-6xl">
             <div className="max-w-4xl">
               <span className="mb-5 inline-flex rounded-full border border-cyan-400/20 bg-white/5 px-4 py-2 text-sm font-semibold text-cyan-200">
-                Ručno vs kontinuirano merenje
+                EU GDP · Kontinuirano merenje · Dokaz za inspekciju
               </span>
 
               <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
@@ -26,9 +26,11 @@ export default function KontrolaTemperatureApotekePage() {
               </h1>
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75 md:text-xl">
-                Ručno merenje temperature u 8h i 14h može pokazati da je sve u
-                redu, ali ne prikazuje šta se dešavalo između ta dva očitavanja.
-                Kontinuirano praćenje daje realnu sliku tokom celog dana.
+                EU GDP zahteva kontinuirano praćenje temperature i dokaz o
+                uslovima čuvanja lekova. Ručna merenja u 8h i 14h prikazuju
+                samo dva trenutka, dok ColdControl beleži temperaturu 24/7,
+                alarme, min/max vrednosti i evidenciju spremnu za internu
+                kontrolu i inspekciju.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -56,8 +58,8 @@ export default function KontrolaTemperatureApotekePage() {
 
               <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
                 Rashladni uređaji rade u ciklusima. Temperatura može da poraste
-                ili padne između dva ručna merenja, a da to ne ostane zabeleženo
-                u evidenciji.
+                ili padne između dva ručna merenja, a da to ne ostane
+                zabeleženo u evidenciji.
               </p>
             </div>
 
@@ -73,8 +75,8 @@ export default function KontrolaTemperatureApotekePage() {
                   </h3>
 
                   <p className="mt-3 leading-7 text-slate-600">
-                    Ako se temperatura meri samo u 8h i 14h, evidencija prikazuje
-                    samo ta dva trenutka, ne i promene između njih.
+                    Ako se temperatura meri samo u 8h i 14h, evidencija
+                    prikazuje samo ta dva trenutka, ne i promene između njih.
                   </p>
                 </div>
 
@@ -133,17 +135,25 @@ export default function KontrolaTemperatureApotekePage() {
 
                 <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">
                   Evropske smernice za dobru distributivnu praksu (EU GDP)
-                  zasnivaju se na tome da uslovi skladištenja lekova moraju biti
-                  kontrolisani, dokumentovani i proverljivi. Kod lekova koji se
-                  čuvaju u frižideru, to znači da nije dovoljno imati samo
-                  povremeno ručno očitavanje temperature.
+                  zahtevaju da uslovi čuvanja lekova budu kontrolisani,
+                  dokumentovani i proverljivi. Kod lekova koji se čuvaju u
+                  frižideru, ključ nije samo trenutno očitavanje temperature,
+                  već dokaz da je temperaturni režim bio pod nadzorom tokom
+                  celog perioda čuvanja.
                 </p>
 
                 <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
-                  Suština GDP pristupa je dokaz: temperatura treba da bude
-                  praćena, zapisana i dostupna za proveru. Ručna merenja u 8h i
-                  14h prikazuju samo dva trenutka, dok kontinuirano praćenje
-                  pokazuje šta se dešavalo između tih očitavanja.
+                  Zbog toga ručna merenja u 8h i 14h nisu dovoljna za potpun
+                  uvid. Ona prikazuju samo dva trenutka u danu, dok
+                  kontinuirano merenje pokazuje šta se dešavalo između tih
+                  očitavanja: minimalne i maksimalne vrednosti, odstupanja,
+                  trajanje alarma i istoriju temperaturnih uslova.
+                </p>
+
+                <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
+                  ColdControl zato ne služi samo za prikaz trenutne temperature,
+                  već za automatsko beleženje, audit log i pripremu izveštaja
+                  koji mogu da se koriste za internu proveru i inspekciju.
                 </p>
               </div>
 
@@ -155,58 +165,33 @@ export default function KontrolaTemperatureApotekePage() {
                 <div className="space-y-4">
                   <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-4">
                     <p className="text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
-                      Citat iz GDP smernica
+                      Kontinuirano praćenje
                     </p>
-                    <p className="mt-2 italic leading-7 text-slate-700">
-                      “Temperature and humidity of storage areas should be
-                      monitored and recorded.”
-                    </p>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
-                      Prevod: temperatura i vlažnost prostora za skladištenje
-                      treba da se prate i beleže.
-                    </p>
-                    <p className="mt-2 text-sm leading-6 text-slate-600">
-                      Objašnjenje: evidencija mora pokazati uslove skladištenja,
-                      a ne samo trenutno stanje u trenutku ručnog upisa.
+                    <p className="mt-2 leading-7 text-slate-700">
+                      Temperatura treba da se prati i beleži tako da postoji
+                      dokaz o uslovima čuvanja, a ne samo trenutni upis u
+                      svesci.
                     </p>
                   </div>
 
                   <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-4">
                     <p className="text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
-                      Citat iz GDP smernica
+                      Min/max i istorija
                     </p>
-                    <p className="mt-2 italic leading-7 text-slate-700">
-                      “An initial temperature mapping exercise should be carried
-                      out on the storage area before use, under representative
-                      conditions.”
-                    </p>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
-                      Prevod: početno temperaturno mapiranje prostora treba
-                      uraditi pre upotrebe, u reprezentativnim uslovima.
-                    </p>
-                    <p className="mt-2 text-sm leading-6 text-slate-600">
-                      Objašnjenje: senzor ne treba postavljati nasumično.
-                      U ozbiljnom sistemu prvo se razume temperaturno ponašanje
-                      rashladnog prostora i kritične zone.
+                    <p className="mt-2 leading-7 text-slate-700">
+                      Bitno je videti minimalne i maksimalne vrednosti,
+                      temperaturne cikluse i eventualna odstupanja tokom celog
+                      dana.
                     </p>
                   </div>
 
                   <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-4">
                     <p className="text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
-                      Citat iz GDP smernica
+                      Audit log
                     </p>
-                    <p className="mt-2 italic leading-7 text-slate-700">
-                      “Equipment used to control or to monitor the environment
-                      should be maintained and calibrated at defined intervals.”
-                    </p>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
-                      Prevod: oprema koja kontroliše ili prati uslove okruženja
-                      treba da se održava i proverava u definisanim intervalima.
-                    </p>
-                    <p className="mt-2 text-sm leading-6 text-slate-600">
-                      Objašnjenje: sistem za praćenje mora imati proverljiv rad,
-                      pouzdanu evidenciju i podatke koji se mogu pokazati pri
-                      internoj kontroli ili inspekciji.
+                    <p className="mt-2 leading-7 text-slate-700">
+                      Sistem mora da čuva trag događaja: merenja, alarma,
+                      odstupanja i istoriju podataka za kasniju proveru.
                     </p>
                   </div>
                 </div>
@@ -220,9 +205,9 @@ export default function KontrolaTemperatureApotekePage() {
 
               <p className="mt-4 max-w-4xl leading-8 text-white/70">
                 Ako apoteka meri temperaturu samo ručno, ona ima zapis za dva
-                trenutka u toku dana. Ako se odstupanje desi između tih merenja,
-                ono može ostati nevidljivo. Kontinuirano praćenje daje dokaz o
-                minimalnim i maksimalnim vrednostima, istoriji kretanja
+                trenutka u toku dana. Ako se odstupanje desi između tih
+                merenja, ono može ostati nevidljivo. Kontinuirano praćenje daje
+                dokaz o minimalnim i maksimalnim vrednostima, istoriji kretanja
                 temperature, alarmima i uslovima čuvanja tokom celog perioda.
               </p>
 
@@ -315,8 +300,8 @@ export default function KontrolaTemperatureApotekePage() {
                   <p className="leading-7 text-slate-600">
                     Procedura se primenjuje na sve rashladne uređaje u apoteci
                     ili zdravstvenom objektu koji se koriste za skladištenje
-                    farmaceutskih proizvoda sa definisanim temperaturnim režimom,
-                    posebno proizvoda koji zahtevaju opseg 2–8°C.
+                    farmaceutskih proizvoda sa definisanim temperaturnim
+                    režimom, posebno proizvoda koji zahtevaju opseg 2–8°C.
                   </p>
                 </div>
 
@@ -481,8 +466,8 @@ export default function KontrolaTemperatureApotekePage() {
 
                 <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
                   Audit log pomaže da se vidi istorija događaja: kada je merenje
-                  zabeleženo, kada je temperatura izašla iz opsega, kada je alarm
-                  aktiviran i kada je pregledan ili potvrđen.
+                  zabeleženo, kada je temperatura izašla iz opsega, kada je
+                  alarm aktiviran i kada je pregledan ili potvrđen.
                 </p>
               </div>
 
@@ -497,8 +482,8 @@ export default function KontrolaTemperatureApotekePage() {
                       Vreme nastanka podatka
                     </p>
                     <p className="mt-1 text-sm leading-6 text-white/65">
-                      Svako merenje ima vreme očitavanja i ne zavisi od naknadnog
-                      ručnog upisa.
+                      Svako merenje ima vreme očitavanja i ne zavisi od
+                      naknadnog ručnog upisa.
                     </p>
                   </div>
 
