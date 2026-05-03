@@ -80,7 +80,6 @@ export default function Footer() {
                   Zakaži demo
                 </Link>
               )}
-
             </div>
           </div>
 
@@ -166,7 +165,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
+        {/* 🔥 DODAT BLOK */}
+        <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/50">
+          Za instalaciju i tehničku podršku na terenu:{" "}
+          <a
+            href="https://majstordex.rs"
+            className="underline hover:text-white transition"
+          >
+            hitne elektro intervencije u Beogradu
+          </a>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
           <p>
             © {new Date().getFullYear()} ColdControl Systems. Sva prava
             zadržana.
