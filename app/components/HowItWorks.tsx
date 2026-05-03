@@ -5,21 +5,21 @@ export default function HowItWorks() {
       title: "Uređaj se povezuje na lokalnu WiFi mrežu",
       description:
         "Centralni uređaj se postavlja u objektu i povezuje na postojeću WiFi mrežu bez dodatne infrastrukture. On obezbeđuje slanje podataka ka ColdControl platformi.",
-      note: "Stabilna lokalna konekcija",
+      note: "Lokalna WiFi konekcija bez dodatne infrastrukture",
     },
     {
       number: "02",
       title: "Senzor meri temperaturu u frižideru",
       description:
         "Temperaturni senzor se postavlja u farmaceutski frižider i kontinuirano prati uslove čuvanja vakcina, lekova i drugih termolabilnih proizvoda u opsegu 2–8°C.",
-      note: "Kontinuirano merenje 24/7",
+      note: "Merenje direktno u frižideru u opsegu 2–8°C",
     },
     {
       number: "03",
       title: "Podaci, alarmi i evidencija",
       description:
         "Podaci se automatski šalju u cloud sistem, gde su dostupni istorija merenja, min/max vrednosti, alarmi pri odstupanju i evidencija za internu kontrolu.",
-      note: "Dokaz i reakcija u realnom vremenu",
+      note: "Automatski zapis, alarm i audit log",
     },
   ];
 
@@ -61,7 +61,7 @@ export default function HowItWorks() {
                   {step.number}
                 </div>
 
-                <div className="h-px w-16 bg-gradient-to-r from-yellow-400 to-transparent" />
+                <div className="h-px w-16 bg-gradient-to-r from-[#123A5A]/30 to-transparent" />
               </div>
 
               <h3 className="mb-4 text-xl font-bold text-[#0B1B2B] sm:text-2xl">
@@ -70,9 +70,8 @@ export default function HowItWorks() {
 
               <p className="leading-7 text-slate-600">{step.description}</p>
 
-              <div className="mt-8 flex items-center gap-2 text-sm font-medium text-[#123A5A] opacity-90">
-                <span className="inline-block h-2.5 w-2.5 rounded-full bg-cyan-400" />
-                <span>{step.note}</span>
+              <div className="mt-8 border-t border-slate-200 pt-4 text-sm font-medium text-slate-500">
+                {step.note}
               </div>
             </div>
           ))}

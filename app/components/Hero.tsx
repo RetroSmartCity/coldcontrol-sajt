@@ -105,9 +105,7 @@ export default function Hero() {
 </h1>
 
 <p className="mb-8 max-w-[580px] text-lg leading-8 text-white/80 lg:text-[20px]">
-  Kontrola temperature u realnom vremenu za apoteke, hladnjače i objekte
-  sa više lokacija — uz automatske alarme, evidenciju merenja i potpunu
-  kontrolu sistema iz jedne platforme.
+  Kontrola temperature u realnom vremenu za apoteke i farmaceutske frižidere — uz automatske alarme, evidenciju merenja i potpunu kontrolu sistema iz jedne platforme.
 </p>
           <div className="mb-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
