@@ -1,7 +1,9 @@
-export const metadata = {
-  title: "Ugovor | ColdControl",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Primer poslovne ponude i SLA ugovora | ColdControl Systems",
   description:
-    "Primer ugovora i ponude za ColdControl sistem praćenja temperature sa SLA i evidencijom za inspekciju.",
+    "Okvirni poslovni dokument za implementaciju ColdControl sistema sa SLA podrškom, automatskom evidencijom temperature i izveštajima za internu kontrolu i inspekcijski nadzor.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
