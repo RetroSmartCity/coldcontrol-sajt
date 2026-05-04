@@ -2,19 +2,19 @@ const pharmaItems = [
   {
     title: "Apoteke",
     description:
-      "Kontinuirano praćenje temperature frižidera za vakcine, biološke proizvode, lekove i druge termolabilne farmaceutske supstance, uz evidenciju, alarme i izveštaje za internu kontrolu.",
+      "Kontinuirano praćenje temperature farmaceutskih frižidera za vakcine, biološke lekove, insuline i druge termolabilne proizvode, uz automatsku evidenciju, alarme, min/max vrednosti i izveštaje za internu kontrolu.",
     badge: "Primarni sektor",
   },
   {
     title: "Lanci apoteka",
     description:
-      "Centralizovan pregled više lokacija, više frižidera i više senzora iz jedne kontrolne table, sa jasnim statusom svakog objekta i istorijom temperaturnih uslova.",
+      "Centralizovan pregled više lokacija, više frižidera i više senzora iz jedne platforme, sa jasnim statusom svakog objekta, istorijom merenja i audit tragom za odgovorna lica.",
     badge: "Više lokacija",
   },
   {
     title: "Zdravstvene ustanove",
     description:
-      "Nadzor rashladnih uređaja u ordinacijama, klinikama i zdravstvenim objektima gde je važno očuvanje uslova čuvanja farmaceutskih proizvoda.",
+      "Nadzor rashladnih uređaja u ordinacijama, klinikama i zdravstvenim objektima gde je važno očuvanje uslova čuvanja lekova, vakcina i drugog temperaturno osetljivog materijala.",
     badge: "2–8°C nadzor",
   },
 ];
@@ -23,19 +23,19 @@ const otherItems = [
   {
     title: "Logistika i skladištenje",
     description:
-      "Praćenje temperaturnih uslova u skladištenju i distribuciji robe koja zahteva stabilan temperaturni režim.",
+      "Praćenje temperaturnih uslova u skladištenju i distribuciji robe koja zahteva stabilan temperaturni režim, uz alarmiranje i istoriju uslova čuvanja.",
     badge: "Hladni lanac",
   },
   {
     title: "Hladnjače",
     description:
-      "Nadzor komora, skladišta i rashladnih zona uz alarm i istoriju temperature za svaki objekat.",
+      "Nadzor komora, skladišta i rashladnih zona uz kontinuirano merenje, alarm pri odstupanju i istoriju temperature za svaki objekat ili zonu.",
     badge: "24/7 nadzor",
   },
   {
     title: "Prehrambeni objekti",
     description:
-      "Praćenje hladnih sistema za restorane, supermarkete i objekte gde je evidencija temperature važna za svakodnevnu kontrolu.",
+      "Praćenje hladnih sistema za restorane, supermarkete i objekte gde je evidencija temperature važna za svakodnevnu kontrolu i smanjenje rizika od propusta.",
     badge: "HACCP podrška",
   },
 ];
@@ -58,14 +58,16 @@ export default function Solutions() {
           </span>
 
           <h2 className="mb-5 text-3xl font-bold text-[#0B1B2B] sm:text-4xl md:text-5xl">
-            Farmaceutski monitoring temperature
-            <span className="block text-[#123A5A]">sa evidencijom za kontrolu</span>
+            Monitoring temperature
+            <span className="block text-[#123A5A]">
+              sa dokazivom evidencijom
+            </span>
           </h2>
 
           <p className="text-base leading-7 text-slate-600 sm:text-lg sm:leading-relaxed">
-            ColdControl je namenjen objektima gde temperaturni uslovi nisu samo
-            tehničko pitanje, već deo odgovornosti, evidencije i pripreme za
-            internu ili regulatornu proveru.
+            ColdControl je namenjen objektima gde temperatura nije samo tehnički
+            podatak, već deo odgovornosti, interne kontrole, sledljivosti i
+            pripreme za inspekcijski uvid.
           </p>
         </div>
 
@@ -80,9 +82,9 @@ export default function Solutions() {
             </h3>
 
             <p className="text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-              Fokus je na kontroli frižidera i rashladnih uređaja u kojima se
-              čuvaju proizvodi osetljivi na temperaturu: vakcine, biološki
-              proizvodi, lekovi i druge farmaceutske supstance.
+              Fokus je na objektima u kojima se čuvaju proizvodi osetljivi na
+              temperaturu: vakcine, biološki lekovi, insulini i drugi
+              farmaceutski proizvodi koji zahtevaju stabilne uslove čuvanja.
             </p>
           </div>
 
@@ -114,7 +116,7 @@ export default function Solutions() {
 
                 <div className="flex items-center gap-2 text-sm font-medium text-[#123A5A] opacity-90">
                   <span className="inline-block h-2.5 w-2.5 rounded-full bg-yellow-400" />
-                  <span>2–8°C, alarmi, izveštaji i audit log</span>
+                  <span>2–8°C, alarmi, min/max, audit log i izveštaji</span>
                 </div>
               </div>
             ))}
@@ -129,35 +131,44 @@ export default function Solutions() {
               </p>
 
               <h3 className="mb-4 text-2xl font-bold text-[#0B1B2B] sm:text-3xl md:text-4xl">
-                Isti sistem se može koristiti i van farmacije
+                Ista logika kontrole i van farmacije
               </h3>
 
               <p className="text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                ColdControl može pratiti i druge temperaturno osetljive sisteme,
-                ali farmaceutski sektor ostaje najvažnija primena kada su dokaz,
-                evidencija i odgovornost ključni deo rada.
+                ColdControl se može koristiti i u drugim temperaturno osetljivim
+                sistemima. Ipak, farmaceutski sektor ostaje najvažnija primena
+                kada su dokaz, evidencija, alarmiranje i odgovornost ključni deo
+                svakodnevnog rada.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 bg-white p-5">
-                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">24/7</p>
+                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">
+                  24/7
+                </p>
                 <p className="text-sm text-slate-600">kontinuirani nadzor</p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5">
-                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">Audit</p>
-                <p className="text-sm text-slate-600">trag događaja</p>
+                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">
+                  Audit
+                </p>
+                <p className="text-sm text-slate-600">trag merenja i alarma</p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5">
-                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">Alarm</p>
+                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">
+                  Alarm
+                </p>
                 <p className="text-sm text-slate-600">reakcija na odstupanje</p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5">
-                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">Cloud</p>
-                <p className="text-sm text-slate-600">jedna kontrolna tabla</p>
+                <p className="mb-1 text-2xl font-bold text-[#0B1B2B] sm:text-3xl">
+                  Cloud
+                </p>
+                <p className="text-sm text-slate-600">centralni pregled</p>
               </div>
             </div>
           </div>
@@ -190,7 +201,7 @@ export default function Solutions() {
 
                 <div className="flex items-center gap-2 text-sm font-medium text-[#123A5A] opacity-80">
                   <span className="inline-block h-2.5 w-2.5 rounded-full bg-cyan-400" />
-                  <span>Monitoring i alarmi u realnom vremenu</span>
+                  <span>Monitoring, alarmi i istorija u realnom vremenu</span>
                 </div>
               </div>
             ))}
@@ -205,14 +216,14 @@ export default function Solutions() {
               </p>
 
               <h3 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl">
-                Od jednog farmaceutskog frižidera do kompletnog lanca lokacija
+                Od jednog frižidera do centralizovanog sistema za više lokacija
               </h3>
 
               <p className="text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-                Bilo da pratiš jedan frižider u apoteci ili više lokacija sa
-                više senzora, sistem ostaje pregledan: trenutna temperatura,
-                istorija, alarmi, min/max vrednosti i izveštaji su dostupni na
-                jednom mestu.
+                Bilo da se prati jedan farmaceutski frižider ili više lokacija
+                sa više senzora, sistem ostaje pregledan: trenutna temperatura,
+                istorija, alarmi, min/max vrednosti, audit log i izveštaji su
+                dostupni na jednom mestu.
               </p>
             </div>
 
@@ -222,12 +233,12 @@ export default function Solutions() {
               </p>
 
               <ul className="space-y-3 text-white/75">
-                <li>• kontinuirano praćenje 24/7</li>
-                <li>• automatski zapis temperature</li>
-                <li>• min/max vrednosti</li>
-                <li>• alarm pri odstupanju</li>
+                <li>• kontinuirano praćenje temperature 24/7</li>
+                <li>• automatski zapis bez ručnog unosa</li>
+                <li>• min/max vrednosti tokom perioda</li>
+                <li>• alarm pri odstupanju od opsega</li>
                 <li>• audit log i istoriju događaja</li>
-                <li>• izveštaje za internu kontrolu</li>
+                <li>• izveštaje za internu kontrolu i inspekcijski uvid</li>
               </ul>
             </div>
           </div>

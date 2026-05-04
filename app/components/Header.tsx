@@ -12,11 +12,11 @@ export default function Header() {
   const navItems = useMemo(
     () => [
       { href: "/", label: "Početna" },
-      { href: "/#proizvod", label: "Proizvod" },
-      { href: "/#resenja", label: "Rešenja" },
+      { href: "/#proizvod", label: "Platforma" },
+      { href: "/#resenja", label: "Compliance" },
       { href: "/kontrola-temperature-u-apotekama", label: "Apoteke" },
       { href: "/cene", label: "Cene" },
-      { href: "/primer-ugovora", label: "Ugovor" },
+      { href: "/primer-ugovora", label: "Dokumentacija" },
       { href: "/#kontakt", label: "Kontakt" },
     ],
     []
@@ -32,12 +32,13 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0B1B2B]/88 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071625]/92 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
         <Link
           href="/"
           className="flex shrink-0 items-center gap-3"
           onClick={() => setMobileOpen(false)}
+          aria-label="ColdControl Systems početna"
         >
           <Image
             src="/images/logo-header-tight.webp"
@@ -49,7 +50,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex" aria-label="Glavna navigacija">
           {navItems.map((item) => {
             const active = isActiveLink(item.href);
 
@@ -65,7 +66,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative text-sm font-medium text-white/70 transition hover:text-white"
+                className="group relative text-sm font-medium text-white/72 transition hover:text-white"
               >
                 {item.label}
                 <span className="absolute left-0 -bottom-2 h-[2px] w-0 rounded-full bg-yellow-400 transition-all duration-300 group-hover:w-full" />
@@ -89,7 +90,7 @@ export default function Header() {
           ) : (
             <Link
               href="/zakazi-demo"
-              className="rounded-2xl bg-yellow-400 px-4 py-2 text-sm font-bold text-black shadow-[0_10px_30px_rgba(250,204,21,0.22)] transition hover:scale-[1.02] sm:px-5 sm:py-2.5"
+              className="rounded-2xl bg-yellow-400 px-4 py-2 text-sm font-bold text-black shadow-[0_10px_30px_rgba(250,204,21,0.22)] transition hover:scale-[1.02] hover:bg-yellow-300 sm:px-5 sm:py-2.5"
             >
               Zakaži demo
             </Link>
@@ -98,6 +99,7 @@ export default function Header() {
           <button
             type="button"
             aria-label={mobileOpen ? "Zatvori meni" : "Otvori meni"}
+            aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((prev) => !prev)}
             className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10 lg:hidden"
           >
@@ -123,8 +125,8 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-white/10 bg-[#0B1B2B]/96 px-4 py-4 lg:hidden">
-          <nav className="flex flex-col gap-2">
+        <div className="border-t border-white/10 bg-[#071625]/98 px-4 py-4 lg:hidden">
+          <nav className="flex flex-col gap-2" aria-label="Mobilna navigacija">
             {navItems.map((item) => {
               const active = isActiveLink(item.href);
 
@@ -152,7 +154,7 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-white/85"
             >
-              Otvori APP
+              Otvori aplikaciju
             </Link>
 
             {pathname !== "/zakazi-demo" && (

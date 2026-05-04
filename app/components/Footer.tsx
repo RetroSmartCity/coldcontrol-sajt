@@ -4,15 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/#proizvod", label: "Proizvod" },
+  { href: "/#proizvod", label: "Platforma" },
   { href: "/#resenja", label: "Rešenja" },
   {
     href: "/kontrola-temperature-u-apotekama",
-    label: "Kontrola temperature u apotekama",
+    label: "Apoteke",
   },
-  { href: "/cene", label: "Cene sistema" },
+  { href: "/cene", label: "Compliance paketi" },
   { href: "/zakazi-demo", label: "Zakaži demo" },
-  { href: "/primer-ugovora", label: "Ugovor" },
+  { href: "/primer-ugovora", label: "Dokumentacija" },
 ];
 
 const contactItems = [
@@ -58,13 +58,13 @@ export default function Footer() {
             </div>
 
             <h3 className="text-2xl font-bold leading-tight md:text-4xl">
-              Pouzdan monitoring temperature za objekte gde je svaka promena
-              važna
+              Automatska evidencija temperature za objekte gde je dokaz važan
             </h3>
 
             <p className="mt-5 max-w-xl text-base leading-8 text-white/65">
-              Praćenje temperature u realnom vremenu, alarmi, istorija merenja,
-              min/max vrednosti i izveštaji za kontrolu.
+              Kontinuirano merenje temperature, alarmi, min/max vrednosti,
+              audit log i izveštaji spremni za internu kontrolu i inspekcijski
+              uvid.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -139,33 +139,35 @@ export default function Footer() {
         <div className="mt-8 grid gap-4 rounded-[24px] border border-white/10 bg-white/[0.04] p-4 sm:mt-10 md:grid-cols-3 md:p-6">
           <div className="rounded-2xl border border-white/8 bg-black/10 px-4 py-4">
             <p className="mb-2 text-xs uppercase tracking-[0.18em] text-white/40">
-              24/7 nadzor
+              24/7 evidencija
             </p>
             <p className="text-sm leading-6 text-white/70">
-              Stalni pregled temperature bez oslanjanja samo na ručni upis.
+              Temperatura se meri i čuva kontinuirano, bez oslanjanja samo na
+              ručni upis u određenim terminima.
             </p>
           </div>
 
           <div className="rounded-2xl border border-white/8 bg-black/10 px-4 py-4">
             <p className="mb-2 text-xs uppercase tracking-[0.18em] text-white/40">
-              Alarm odmah
+              Alarm i odstupanja
             </p>
             <p className="text-sm leading-6 text-white/70">
-              Brža reakcija kada temperatura izađe iz dozvoljenog opsega.
+              Svako odstupanje od definisanog opsega može biti zabeleženo uz
+              istoriju događaja i bržu reakciju.
             </p>
           </div>
 
           <div className="rounded-2xl border border-white/8 bg-black/10 px-4 py-4">
             <p className="mb-2 text-xs uppercase tracking-[0.18em] text-white/40">
-              Izveštaji
+              Audit log i izveštaji
             </p>
             <p className="text-sm leading-6 text-white/70">
-              Pregled istorije, min/max vrednosti i priprema za kontrolu.
+              Istorija merenja, min/max vrednosti i izveštaji ostaju dostupni
+              za odgovorno lice, internu proveru i inspekcijski uvid.
             </p>
           </div>
         </div>
 
-        {/* 🔥 DODAT BLOK */}
         <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/50">
           Za instalaciju i tehničku podršku na terenu:{" "}
           <a

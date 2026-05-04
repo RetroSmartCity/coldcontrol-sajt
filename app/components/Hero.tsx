@@ -96,45 +96,57 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(520px,620px)] lg:gap-14">
         <div className="min-w-0 max-w-[620px]">
-          
-<h1 className="mb-5 text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-  Sigurna kontrola temperature
-  <span className="mt-2 block text-yellow-400">
-    bez rizika za robu i poslovanje
-  </span>
-</h1>
+          <h1 className="mb-5 text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+            Kontrola temperature
+            <span className="mt-2 block text-yellow-400">
+              sa evidencijom spremnom za inspekciju
+            </span>
+          </h1>
 
-<p className="mb-8 max-w-[580px] text-lg leading-8 text-white/80 lg:text-[20px]">
-  Kontrola temperature u realnom vremenu za apoteke i farmaceutske frižidere — uz automatske alarme, evidenciju merenja i potpunu kontrolu sistema iz jedne platforme.
-</p>
+          <p className="mb-4 max-w-[580px] text-lg leading-8 text-white/80 lg:text-[20px]">
+            Kontinuirano praćenje temperature u farmaceutskim frižiderima — uz
+            automatske alarme, audit log i potpunu sledljivost podataka.
+          </p>
+
+          <p className="mb-8 text-sm text-white/60">
+            Bez ručnog vođenja evidencije, bez nevidljivih odstupanja i bez
+            naknadnog sastavljanja izveštaja.
+          </p>
+
           <div className="mb-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
-              <p className="mb-1 text-[15px] font-semibold text-white">Alarm sistem</p>
+              <p className="mb-1 text-[15px] font-semibold text-white">
+                Alarm i odstupanja
+              </p>
               <p className="text-sm leading-6 text-white/65">
-                Odmah vidiš odstupanje i reaguješ pre većeg problema
+                Automatska detekcija izlaska iz opsega (2–8°C)
               </p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
               <p className="mb-1 text-[15px] font-semibold text-white">
-                Istorija i evidencija
+                Audit log
               </p>
               <p className="text-sm leading-6 text-white/65">
-                Sva merenja ostaju zabeležena za kontrolu i interni pregled
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
-              <p className="mb-1 text-[15px] font-semibold text-white">Više lokacija</p>
-              <p className="text-sm leading-6 text-white/65">
-                Jedna kontrolna tabla za objekte, senzore i stanje sistema
+                Svako merenje i alarm ostaju trajno zabeleženi
               </p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
-              <p className="mb-1 text-[15px] font-semibold text-white">Cloud pristup</p>
+              <p className="mb-1 text-[15px] font-semibold text-white">
+                Min / Max evidencija
+              </p>
               <p className="text-sm leading-6 text-white/65">
-                Pregled sa računara i telefona kada god je potrebno
+                Automatski uvid u ekstremne vrednosti tokom dana
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
+              <p className="mb-1 text-[15px] font-semibold text-white">
+                Izveštaji
+              </p>
+              <p className="text-sm leading-6 text-white/65">
+                PDF izveštaji spremni za inspekciju u svakom trenutku
               </p>
             </div>
           </div>
@@ -158,17 +170,17 @@ export default function Hero() {
           <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/60">
             <div className="flex items-center gap-2">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-green-400" />
-              <span>24/7 nadzor</span>
+              <span>24/7 evidencija temperature</span>
             </div>
 
             <div className="flex items-center gap-2">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-yellow-400" />
-              <span>Alarm na odstupanje</span>
+              <span>Automatski alarm</span>
             </div>
 
             <div className="flex items-center gap-2">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-cyan-400" />
-              <span>Više lokacija i senzora</span>
+              <span>Spremno za inspekciju</span>
             </div>
           </div>
         </div>

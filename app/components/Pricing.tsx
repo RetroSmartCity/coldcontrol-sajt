@@ -2,36 +2,36 @@ import Link from "next/link";
 
 const plans = [
   {
-    name: "Početni paket",
-    subtitle: "Za jednu lokaciju i brz, jednostavan ulazak u sistem",
+    name: "Compliance početak",
+    subtitle: "Za jednu lokaciju i osnovnu automatsku evidenciju temperature",
     price: "99€",
     oldPrice: "199€",
     monthly: "4€ mesečno po senzoru",
-    badge: "Promo ponuda",
+    badge: "Promo paket",
     highlight: false,
     accent: "cyan",
     description:
-      "Odličan izbor za korisnike koji žele da uvedu digitalno praćenje temperature bez komplikovanog početka i bez velikog početnog ulaganja.",
+      "Početni paket za objekte koji žele da pređu sa ručnog zapisivanja temperature na automatsku evidenciju, alarmiranje i pregled istorije merenja.",
     note:
-      "U promo ponudi uređaj je dostupan po ceni od 99€, umesto redovne cene od 199€.",
+      "Promo cena uređaja je 99€, umesto redovne cene od 199€. Paket je namenjen brzom ulasku u sistem bez velikog početnog ulaganja.",
     features: [
       "Uređaj sa 3 senzora uključen u cenu",
       "Besplatna instalacija na lokaciji",
-      "Osnovna obuka za korišćenje sistema",
+      "Osnovna obuka za odgovorno lice",
       "Cloud pregled temperature i statusa",
       "Automatski alarm pri odstupanju",
-      "Istorija merenja na jednom mestu",
+      "Istorija merenja i min/max vrednosti",
       "Garancija na uređaje 12 meseci",
     ],
     extra: [
-      "Jednostavan mesečni model za cloud i održavanje",
-      "Sistem je odmah spreman za realan rad",
-      "Kasnije proširenje je lako i pregledno",
+      "Automatska evidencija bez ručnog upisa",
+      "Podaci dostupni za internu proveru",
+      "Mogućnost kasnijeg proširenja sistema",
     ],
   },
   {
-    name: "Prošireni paket",
-    subtitle: "Za više frižidera, više zona i ozbiljniji svakodnevni rad",
+    name: "Compliance prošireni",
+    subtitle: "Za više frižidera, više zona i ozbiljniji nadzor uslova čuvanja",
     price: "Početak od 99€",
     oldPrice: "",
     monthly: "4€ mesečno po senzoru",
@@ -39,49 +39,49 @@ const plans = [
     highlight: true,
     accent: "yellow",
     description:
-      "Praktično rešenje za korisnike kojima je potreban veći broj mernih tačaka i bolji pregled sistema kroz više senzora, uređaja ili lokacija.",
+      "Paket za objekte kojima je potrebno više mernih tačaka, jasnija sledljivost podataka i pregled stanja po frižiderima, zonama ili odgovornim lokacijama.",
     note:
-      "Osnovni uređaj dolazi sa 3 senzora, a dodatni senzori se uključuju po potrebi, u skladu sa objektom i organizacijom rada.",
+      "Osnovni uređaj dolazi sa 3 senzora, a dodatni senzori se uključuju prema rasporedu frižidera, zona i realnoj organizaciji rada.",
     features: [
       "Početni uređaj sa 3 senzora",
       "Dodavanje dodatnih senzora po potrebi",
-      "Bolji pregled više tačaka merenja",
+      "Pregled više mernih tačaka",
       "Centralni cloud dashboard",
-      "Istorija, status i alarm logika",
+      "Istorija, min/max i alarm logika",
       "Lakše praćenje više frižidera ili zona",
       "Prilagođavanje rastu sistema",
     ],
     extra: [
       "Dodatni senzor 30€ jednokratno",
-      "Pregledniji rad bez ručnog vođenja evidencije",
-      "Pogodno za korisnike koji žele ozbiljniju kontrolu",
+      "Manje ručne evidencije i manje grešaka",
+      "Pogodno za ozbiljniju internu kontrolu",
     ],
   },
   {
     name: "Lanci i veći sistemi",
-    subtitle: "Za više objekata, više lokacija i centralizovan pregled",
+    subtitle: "Za više objekata, više lokacija i centralizovan compliance pregled",
     price: "Po dogovoru",
     oldPrice: "",
-    monthly: "već od 3,2€ po senzoru mesecno",
+    monthly: "već od 3,2€ po senzoru mesečno",
     badge: "Za veće sisteme",
     highlight: false,
     accent: "cyan",
     description:
-      "Model namenjen većim sistemima kojima je potreban organizovan pregled više objekata, više uređaja i većeg ukupnog broja senzora.",
+      "Model za apotekarske lance, veće sisteme i organizacije koje žele centralizovan pregled više objekata, uređaja, senzora i temperaturnih zona.",
     note:
-      "Za veće sisteme formira se posebna ponuda u skladu sa brojem lokacija, ukupnim brojem senzora i načinom organizacije sistema.",
+      "Za veće sisteme formira se posebna ponuda prema broju lokacija, ukupnom broju senzora, organizaciji korisnika i potrebnom nivou izveštavanja.",
     features: [
       "Više lokacija i više uređaja",
       "Centralni pregled svih objekata",
       "Organizacija po lokacijama i zonama",
-      "Jednostavnije upravljanje većim sistemom",
+      "Jasan status svake merne tačke",
       "Fleksibilno širenje po potrebi",
       "Prilagođavanje strukturi firme",
       "Povoljniji model za veći obim sistema",
     ],
     extra: [
       "Niža cena po senzoru za veće sisteme",
-      "Pogodno za postepeno uvođenje po lokacijama",
+      "Pogodno za fazno uvođenje po lokacijama",
       "Stabilan model za dugoročan rast sistema",
     ],
   },
@@ -93,42 +93,42 @@ const offerHighlights = [
     text: "promo cena uređaja",
   },
   {
-    title: "199€",
-    text: "redovna cena uređaja",
-  },
-  {
     title: "3 senzora",
     text: "uključena u početni paket",
   },
   {
-    title: "30€",
-    text: "dodatni senzor",
+    title: "24/7",
+    text: "kontinuirana evidencija",
+  },
+  {
+    title: "Audit",
+    text: "trag merenja i događaja",
   },
 ];
 
 const starterIncludes = [
   "Uređaj sa 3 senzora",
   "Besplatna instalacija",
-  "Osnovna obuka",
+  "Osnovna obuka za odgovorno lice",
   "Garancija na uređaje 12 meseci",
-  "Cloud pregled, istorija i alarm logika",
+  "Cloud pregled, istorija, min/max i alarm logika",
 ];
 
 const whyItMatters = [
   {
     title: "Bez ručnog upisivanja",
     text:
-      "Nema više ručnog zapisivanja temperature u sveske, formulare ili tabele. Sistem automatski beleži podatke i čuva ih na jednom mestu.",
+      "Temperatura se više ne vodi ručno u sveskama, formularima ili tabelama. Sistem automatski beleži podatke i čuva ih na jednom mestu.",
   },
   {
-    title: "Brži pregled stanja",
+    title: "Dokaz o uslovima čuvanja",
     text:
-      "U svakom trenutku možeš da vidiš šta se dešava na lokaciji, bez proveravanja više papira, tabela i zasebnih evidencija.",
+      "Umesto pojedinačnog očitavanja u jednom trenutku, dobija se istorija kretanja temperature, min/max vrednosti i trag alarma.",
   },
   {
-    title: "Manje prostora za grešku",
+    title: "Manje prostora za propust",
     text:
-      "Automatsko očitavanje i alarmi smanjuju mogućnost da se problem primeti prekasno ili da se podatak zaboravi da bude upisan.",
+      "Automatsko očitavanje i alarmi smanjuju rizik da se odstupanje primeti prekasno ili da evidencija ostane nepotpuna.",
   },
 ];
 
@@ -137,52 +137,52 @@ const pricingNotes = [
   "Početni paket uključuje uređaj sa 3 senzora, instalaciju i osnovnu obuku.",
   "Garancija na uređaje traje 12 meseci.",
   "Dodatni senzori se doplaćuju 30€ jednokratno po senzoru.",
-  "Cloud pristup i održavanje sistema uključeni su kroz jednostavan mesečni model.",
+  "Cloud pristup, istorija i alarm logika uključeni su kroz mesečni model.",
   "Za veće sisteme i lance cena po senzoru može biti povoljnija.",
 ];
 
 const examples = [
   {
-    title: "Jedna lokacija",
+    title: "Jedna apoteka",
     text:
-      "Odličan model za korisnike koji žele da krenu sa jednom lokacijom i odmah pređu na automatsko praćenje bez ručnog upisivanja temperature.",
+      "Dobar početak za objekat koji želi da zameni ručni zapis automatskom evidencijom temperature i alarmiranjem pri odstupanju.",
   },
   {
     title: "Više frižidera ili zona",
     text:
-      "Kada objekat ima više mesta koja treba nadzirati, sistem se lako širi dodavanjem dodatnih senzora bez menjanja cele logike rada.",
+      "Kada postoji više mesta za nadzor, sistem se proširuje dodatnim senzorima, bez menjanja osnovne logike rada.",
   },
   {
-    title: "Više objekata",
+    title: "Više lokacija",
     text:
-      "Za veći broj lokacija dobijaš organizovan centralni pregled, jasniju kontrolu i bolju cenu po senzoru kroz posebno formiranu ponudu.",
+      "Za lance i veće sisteme dobija se centralizovan pregled svih objekata, jasnija odgovornost i bolja cena po senzoru.",
   },
 ];
 
 const processSteps = [
   {
     step: "01",
-    title: "Dogovor i procena",
+    title: "Procena mernih tačaka",
     text:
-      "Na osnovu objekta, broja tačaka merenja i načina rada, određuje se najpraktičniji početni model sistema.",
+      "Na osnovu objekta, broja frižidera, zona i načina rada određuje se gde je najvažnije postaviti senzore.",
   },
   {
     step: "02",
-    title: "Instalacija i podešavanje",
+    title: "Instalacija i obuka",
     text:
-      "Uređaj i senzori se postavljaju, sistem se povezuje i priprema za svakodnevno korišćenje.",
+      "Uređaj i senzori se postavljaju, sistem se povezuje, a odgovorno lice dobija osnovnu obuku za svakodnevno korišćenje.",
   },
   {
     step: "03",
-    title: "Pregled i automatsko praćenje",
+    title: "Automatska evidencija",
     text:
-      "Temperatura se prati automatski, bez ručnog upisivanja, uz pregled istorije i alarm pri odstupanju.",
+      "Temperatura se prati 24/7, podaci se čuvaju, a alarmi i istorija ostaju dostupni za internu kontrolu i inspekcijski uvid.",
   },
 ];
 
 const faqs = [
   {
-    question: "Da li početni paket već dolazi spreman za rad?",
+    question: "Da li početni paket dolazi spreman za rad?",
     answer:
       "Da. Početni paket uključuje uređaj sa 3 senzora, instalaciju i osnovnu obuku, tako da sistem može brzo da se uvede u svakodnevni rad.",
   },
@@ -191,16 +191,16 @@ const faqs = [
     answer:
       "Da. Sistem je napravljen tako da može da se širi po potrebi, bez komplikovanog prelaska na potpuno novo rešenje.",
   },
-{
-  question: "Šta se menja u odnosu na ručno vođenje evidencije?",
-  answer:
-    "Umesto da temperaturu proveravaš i upisuješ ručno, sistem je meri i beleži automatski. Svi podaci su na jednom mestu, bez dodatnog posla i bez rizika da nešto ostane neupisano.",
-},
-{
-  question: "Zašto je kontinuirano merenje bitno?",
-  answer:
-    "Kod klasičnog merenja vidiš samo temperaturu u trenutku kada je proveriš. Sve između tih merenja ostaje nepoznato. Kontinuirano merenje prati temperaturu stalno, tokom celog dana i noći, pa se svako odstupanje odmah vidi i ne može da prođe neprimećeno.",
-},
+  {
+    question: "Šta se menja u odnosu na ručno vođenje evidencije?",
+    answer:
+      "Umesto ručnog očitavanja i upisivanja, sistem meri i beleži temperaturu automatski. Podaci su na jednom mestu, sa istorijom, min/max vrednostima i alarmima.",
+  },
+  {
+    question: "Zašto je kontinuirano merenje bitno?",
+    answer:
+      "Ručno merenje pokazuje samo temperaturu u trenutku provere. Kontinuirano merenje pokazuje šta se dešavalo tokom celog dana i noći, uključujući odstupanja između dve provere.",
+  },
 ];
 
 export default function Pricing() {
@@ -219,19 +219,20 @@ export default function Pricing() {
       <div className="relative mx-auto max-w-6xl">
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
           <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
-            Cene i paketi
+            Cene i compliance paketi
           </span>
 
           <h2 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-            Jednostavan početak
-            <span className="block text-yellow-400">i sistem koji lako raste dalje</span>
+            Automatska evidencija temperature
+            <span className="block text-yellow-400">
+              bez komplikovanog početka
+            </span>
           </h2>
 
           <p className="text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-            Sistem je zamišljen tako da možeš da kreneš brzo i bez komplikovanja,
-            a da kasnije lako proširiš broj senzora, uređaja ili lokacija prema
-            stvarnoj potrebi. Najvažnije je da više nema ručnog upisivanja
-            temperature i vođenja evidencije na više mesta.
+            ColdControl omogućava brz prelazak sa ručnog upisivanja temperature
+            na automatsko merenje, alarmiranje, istoriju podataka i izveštaje
+            spremne za internu proveru ili inspekcijski uvid.
           </p>
         </div>
 
@@ -239,7 +240,7 @@ export default function Pricing() {
           <div className="grid gap-6 md:grid-cols-[1fr_0.95fr] md:items-center">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-200">
-                Promo ponuda
+                Promo početak
               </p>
 
               <h3 className="mb-3 text-2xl font-bold sm:text-3xl">
@@ -249,21 +250,20 @@ export default function Pricing() {
               </h3>
 
               <p className="mb-3 max-w-2xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
-                Početni paket je osmišljen da omogući lak ulazak u sistem bez
-                nepotrebnog opterećenja na startu. U promo cenu ulazi uređaj sa
-                3 senzora, besplatna instalacija i osnovna obuka, tako da sve bude
-                spremno za normalan rad odmah nakon postavljanja.
+                Početni paket je namenjen objektima koji žele da uvedu
+                automatsku evidenciju temperature bez velikog ulaganja na startu.
+                U cenu ulazi uređaj sa 3 senzora, instalacija i osnovna obuka.
               </p>
 
               <p className="mb-3 text-base leading-7 text-white/68">
-                Umesto ručnog zapisivanja temperature, podaci se automatski mere,
-                beleže i čuvaju u sistemu, uz pregled istorije i alarm kada dođe
-                do odstupanja.
+                Sistem automatski meri, beleži i čuva podatke, prikazuje istoriju
+                merenja, min/max vrednosti i šalje alarm kada temperatura izađe
+                iz definisanog opsega.
               </p>
 
               <p className="text-sm text-white/58">
-                Cloud pristup i redovno održavanje uključeni su kroz jednostavan
-                mesečni model, dok garancija na uređaje traje 12 meseci.
+                Cloud pristup i održavanje uključeni su kroz mesečni model, dok
+                garancija na uređaje traje 12 meseci.
               </p>
             </div>
 
@@ -455,14 +455,16 @@ export default function Pricing() {
 
               <h3 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl">
                 Jasna struktura
-                <span className="block text-yellow-400">bez komplikovanog objašnjavanja</span>
+                <span className="block text-yellow-400">
+                  od jedne merne tačke do više lokacija
+                </span>
               </h3>
 
               <p className="text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-                Ideja je da korisnik odmah razume šta dobija u početnom paketu,
-                kako sistem funkcioniše i na koji način kasnije može da ga proširi.
-                Umesto ručnog upisivanja temperature i razbacane evidencije, dobija
-                pregledan sistem koji olakšava svakodnevni rad.
+                Korisnik odmah vidi šta dobija u početnom paketu, kako se sistem
+                uvodi i kako kasnije raste. Umesto razbacane evidencije, dobija
+                centralizovan pregled temperature, alarma, istorije i statusa
+                svake merne tačke.
               </p>
             </div>
 
@@ -486,8 +488,10 @@ export default function Pricing() {
               Primer primene
             </p>
             <h3 className="text-2xl font-bold sm:text-3xl">
-              Sistem može da prati
-              <span className="block text-yellow-400">način na koji posao stvarno funkcioniše</span>
+              Sistem prati realan rad objekta
+              <span className="block text-yellow-400">
+                a ne samo pojedinačna ručna očitavanja
+              </span>
             </h3>
           </div>
 
@@ -510,8 +514,10 @@ export default function Pricing() {
               Kako izgleda uvođenje
             </p>
             <h3 className="text-2xl font-bold sm:text-3xl">
-              Od dogovora do
-              <span className="block text-yellow-400">automatskog praćenja</span>
+              Od procene merne tačke do
+              <span className="block text-yellow-400">
+                automatske evidencije temperature
+              </span>
             </h3>
           </div>
 
@@ -537,8 +543,8 @@ export default function Pricing() {
               Česta pitanja
             </p>
             <h3 className="text-2xl font-bold sm:text-3xl">
-              Ono što korisnike
-              <span className="block text-yellow-400">najčešće zanima</span>
+              Ono što odgovorno lice
+              <span className="block text-yellow-400">najčešće želi da zna</span>
             </h3>
           </div>
 
@@ -557,10 +563,11 @@ export default function Pricing() {
 
         <div className="text-center">
           <p className="mx-auto max-w-3xl text-sm leading-7 text-white/50 sm:text-base">
-            Prikazane cene i paketi služe kao jasan orijentir. Konačna ponuda za
-            veće sisteme zavisi od broja lokacija, ukupnog broja senzora i načina
-            organizacije sistema, ali logika ostaje ista: preglednije, jednostavnije
-            i bez ručnog upisivanja temperature.
+            Prikazane cene i paketi služe kao orijentir za uvođenje sistema.
+            Konačna ponuda za veće sisteme zavisi od broja lokacija, ukupnog
+            broja senzora i načina organizacije, ali cilj ostaje isti: automatska
+            evidencija, brža reakcija na odstupanje i jasniji dokaz o uslovima
+            čuvanja.
           </p>
         </div>
       </div>
