@@ -25,6 +25,7 @@ export default function Header() {
   const docItems = [
     { href: "/primer-ugovora", label: "Primer ugovora" },
     { href: "/primer-izvestaja", label: "Primer izveštaja" },
+    { href: "/skica-sistema", label: "Skica sistema" },
   ];
 
   const isActiveLink = (href: string) => {
@@ -33,8 +34,7 @@ export default function Header() {
     return pathname === href;
   };
 
-  const docsActive =
-    pathname === "/primer-ugovora" || pathname === "/primer-izvestaja";
+  const docsActive = docItems.some((doc) => pathname === doc.href);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071625]/92 backdrop-blur-xl">
