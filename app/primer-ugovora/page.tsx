@@ -117,7 +117,7 @@ export default function PrimerUgovoraPage() {
 
               <ul className="mt-2 list-disc pl-6">
                 <li>centralni uređaj za prikupljanje podataka</li>
-                <li>do 3 merne tačke</li>
+                <li>3 merne tačke</li>
                 <li>inicijalnu konfiguraciju sistema</li>
                 <li>instalaciju na lokaciji korisnika</li>
                 <li>korisnički pristup cloud platformi</li>
@@ -127,14 +127,15 @@ export default function PrimerUgovoraPage() {
 
               <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
                 <p>
-                  <strong>Početna implementacija:</strong> 99€ bez PDV-a —
-                  pilot uslovi.
+                  <strong>Početna implementacija:</strong> "Konfiguracija prema potrebama objekta"
+
                 </p>
                 <p>
-                  <strong>Standardna implementacija:</strong> 199€ bez PDV-a.
+                  <strong>Standardna implementacija:</strong>  "Prilagođena ponuda prema organizaciji sistema"
+
                 </p>
                 <p>
-                  <strong>Dodatna merna tačka:</strong> 30€ bez PDV-a.
+                  <strong>Dodatna merna tačka:</strong> "Dodavanje novih mernih pozicija po potrebi"
                 </p>
               </div>
             </section>
@@ -152,14 +153,10 @@ export default function PrimerUgovoraPage() {
 
               <p className="mt-3">
                 Standardna cena održavanja:{" "}
-                <strong>4€ po mernoj tački mesečno bez PDV-a</strong>.
+                <strong>"Mesečni model po senzoru"</strong>.
               </p>
 
-              <p>
-                Za veće sisteme i lance cena može biti od{" "}
-                <strong>3,2€ po mernoj tački mesečno bez PDV-a</strong>, u
-                skladu sa posebnom ponudom.
-              </p>
+              
             </section>
 
             <section>
