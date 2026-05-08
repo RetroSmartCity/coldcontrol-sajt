@@ -221,6 +221,152 @@ export default function KontrolaTemperatureApotekePage() {
           </div>
         </section>
 
+
+  
+<section    id="mapiranje"  className="bg-white px-4 py-14 sm:px-6 md:py-20">
+  <div className="mx-auto max-w-6xl">
+    <div className="mb-10 max-w-4xl">
+      <span className="mb-4 inline-flex rounded-full border border-[#123A5A]/10 bg-[#123A5A]/5 px-4 py-2 text-sm font-semibold text-[#123A5A]">
+        Temperaturno mapiranje frižidera
+      </span>
+
+      <h2 className="text-3xl font-bold leading-tight text-[#0B1B2B] sm:text-4xl md:text-5xl">
+        Različite zone frižidera mogu imati različitu temperaturu
+      </h2>
+
+      <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">
+        Temperatura unutar farmaceutskog frižidera nije uvek jednaka u svim
+        delovima uređaja. Na odstupanja utiču položaj ventilacije,
+        otvaranje vrata, raspored proizvoda i ciklusi rada kompresora.
+      </p>
+
+      <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
+        Zato se u praksi koristi temperaturno mapiranje — analiza ponašanja
+        temperature u različitim zonama frižidera tokom određenog vremenskog
+        perioda.
+      </p>
+    </div>
+
+    <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+      <div className="rounded-[30px] border border-slate-200 bg-[#0B1B2B] p-6 text-white shadow-[0_24px_80px_rgba(15,23,42,0.18)] sm:p-8">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-200">
+          48h analiza rashladnog režima
+        </p>
+
+        <h3 className="text-2xl font-bold leading-tight sm:text-3xl">
+          Kontinuirano praćenje sa 3 temperaturne sonde
+        </h3>
+
+        <p className="mt-5 leading-8 text-white/70">
+          ColdControl omogućava temperaturno mapiranje farmaceutskih
+          frižidera kroz kontinuirano merenje temperature tokom 48h u više
+          zona uređaja.
+        </p>
+
+        <div className="mt-6 space-y-3">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p className="font-bold text-white">Sonda 1 — gornja zona</p>
+            <p className="mt-1 text-sm leading-6 text-white/65">
+              Praćenje temperature u blizini ventilacije i zadnjeg dela
+              frižidera.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p className="font-bold text-white">Sonda 2 — centralna zona</p>
+            <p className="mt-1 text-sm leading-6 text-white/65">
+              Analiza najstabilnije pozicije za kontrolno merenje.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p className="font-bold text-white">Sonda 3 — donja zona</p>
+            <p className="mt-1 text-sm leading-6 text-white/65">
+              Praćenje oscilacija izazvanih otvaranjem vrata i spoljnim
+              uticajima.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-7 rounded-2xl border border-yellow-400/20 bg-yellow-400/10 p-4">
+          <p className="text-sm font-semibold text-yellow-300">
+            AKCIJA
+          </p>
+
+          <p className="mt-2 text-sm leading-6 text-white/75">
+            Besplatno 48h temperaturno mapiranje za prve 3 apoteke ili tokom
+            trajanja promotivnog perioda.
+          </p>
+        </div>
+      </div>
+
+      <div className="rounded-[30px] border border-slate-200 bg-[#F8FAFC] p-6 shadow-[0_20px_70px_rgba(15,23,42,0.08)] sm:p-8">
+        <span className="mb-4 inline-flex rounded-full border border-[#123A5A]/10 bg-white px-4 py-2 text-sm font-semibold text-[#123A5A]">
+          Primer izveštaja
+        </span>
+
+        <h3 className="text-2xl font-bold leading-tight text-[#0B1B2B] sm:text-3xl">
+          Izveštaj nakon završenog mapiranja
+        </h3>
+
+        <p className="mt-5 leading-8 text-slate-600">
+          Nakon završetka merenja generiše se izveštaj koji prikazuje:
+        </p>
+
+        <div className="mt-6 grid gap-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+            <p className="font-bold text-[#0B1B2B]">
+              Minimalne i maksimalne vrednosti
+            </p>
+
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Prikaz temperaturnih oscilacija po zonama frižidera tokom
+              kompletnog perioda merenja.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+            <p className="font-bold text-[#0B1B2B]">
+              Grafički prikaz temperature
+            </p>
+
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Vizuelni prikaz temperaturnih promena tokom 48h rada uređaja.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+            <p className="font-bold text-[#0B1B2B]">
+              Audit trag i evidencija događaja
+            </p>
+
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Istorija merenja, alarma i temperaturnih odstupanja ostaje
+              sačuvana u sistemu.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <Link
+            href="/primer-izvestaja"
+            className="rounded-2xl bg-[#123A5A] px-6 py-4 text-center font-bold text-white transition hover:scale-[1.02]"
+          >
+            Pogledaj primer izveštaja
+          </Link>
+
+          <Link
+            href="/zakazi-demo"
+            className="rounded-2xl border border-slate-300 bg-white px-6 py-4 text-center font-bold text-[#0B1B2B] transition hover:bg-slate-50"
+          >
+            Zakaži mapiranje
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         <section className="bg-[#F8FAFC] px-4 py-14 sm:px-6 md:py-20">
           <div className="mx-auto max-w-6xl">
             <div className="mb-10 max-w-4xl">
@@ -393,6 +539,8 @@ export default function KontrolaTemperatureApotekePage() {
           </div>
         </section>
 
+
+
         <section className="bg-white px-4 py-14 sm:px-6 md:py-20">
           <div className="mx-auto max-w-6xl">
             <div className="grid gap-6 md:grid-cols-3">
@@ -443,6 +591,8 @@ export default function KontrolaTemperatureApotekePage() {
             </div>
           </div>
         </section>
+
+        
 
         <section className="bg-[#F8FAFC] px-4 py-14 sm:px-6 md:py-20">
           <div className="mx-auto max-w-6xl">
