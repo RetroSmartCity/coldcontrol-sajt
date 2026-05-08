@@ -17,6 +17,7 @@ export default function Header() {
       { href: "/#proizvod", label: "Platforma" },
       { href: "/#resenja", label: "Compliance" },
       { href: "/kontrola-temperature-u-apotekama", label: "Apoteke" },
+      { href: "/haccp", label: "HACCP" },
       { href: "/cene", label: "Cene" },
       { href: "/#kontakt", label: "Kontakt" },
     ],
@@ -25,21 +26,17 @@ export default function Header() {
 
   const docItems = [
     { href: "/primer-ugovora", label: "Primer ugovora" },
-
     { href: "/primer-izvestaja", label: "Primer izveštaja" },
-
     {
       href: "/izvestaj-mapiranja-frizidera",
       label: "Izveštaj mapiranja frižidera",
     },
-
     { href: "/skica-sistema", label: "Skica sistema" },
   ];
 
   const isActiveLink = (href: string) => {
     if (href === "/") return pathname === "/";
     if (href.startsWith("/#")) return false;
-
     return pathname === href;
   };
 
@@ -77,7 +74,6 @@ export default function Header() {
                 className="relative text-sm font-semibold text-white"
               >
                 {item.label}
-
                 <span className="absolute left-0 -bottom-2 h-[2px] w-full rounded-full bg-yellow-400" />
               </span>
             ) : (
@@ -87,7 +83,6 @@ export default function Header() {
                 className="group relative text-sm font-medium text-white/72 transition hover:text-white"
               >
                 {item.label}
-
                 <span className="absolute left-0 -bottom-2 h-[2px] w-0 rounded-full bg-yellow-400 transition-all duration-300 group-hover:w-full" />
               </Link>
             );
@@ -102,13 +97,10 @@ export default function Header() {
               type="button"
               onClick={() => setDocsOpen((prev) => !prev)}
               className={`group relative text-sm font-medium transition ${
-                docsActive
-                  ? "text-white"
-                  : "text-white/72 hover:text-white"
+                docsActive ? "text-white" : "text-white/72 hover:text-white"
               }`}
             >
               Dokumentacija
-
               <span
                 className={`absolute left-0 -bottom-2 h-[2px] rounded-full bg-yellow-400 transition-all duration-300 ${
                   docsActive ? "w-full" : "w-0 group-hover:w-full"
@@ -134,43 +126,6 @@ export default function Header() {
               </div>
             )}
           </div>
-
-          <Link
-  href="/kontrola-temperature-u-apotekama#mapiranje"
-  className="
-    group
-    relative
-    inline-flex
-    items-center
-    gap-2
-    overflow-hidden
-    rounded-xl
-    border
-    border-yellow-300/20
-    bg-gradient-to-b
-    from-yellow-300
-    to-yellow-500
-    px-4
-    py-2.5
-    text-[13px]
-    font-extrabold
-    tracking-[0.03em]
-    text-[#071521]
-    shadow-[0_10px_28px_rgba(250,204,21,0.22)]
-    transition-all
-    duration-300
-    hover:-translate-y-[1px]
-    hover:shadow-[0_14px_38px_rgba(250,204,21,0.32)]
-    hover:brightness-105
-    whitespace-nowrap
-  "
->
-  <span className="h-2 w-2 rounded-full bg-[#071521] animate-pulse" />
-
-  48H MAPIRANJE
-
-  <span className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-</Link>
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -207,13 +162,11 @@ export default function Header() {
                   mobileOpen ? "translate-y-[7px] rotate-45" : ""
                 }`}
               />
-
               <span
                 className={`absolute left-0 top-[7px] h-[2px] w-5 rounded-full bg-white transition ${
                   mobileOpen ? "opacity-0" : ""
                 }`}
               />
-
               <span
                 className={`absolute left-0 top-[14px] h-[2px] w-5 rounded-full bg-white transition ${
                   mobileOpen ? "-translate-y-[7px] -rotate-45" : ""
@@ -257,7 +210,7 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
               className="rounded-2xl bg-yellow-400 px-4 py-3 text-center text-sm font-extrabold text-black"
             >
-              AKCIJA — Besplatno mapiranje
+              48H mapiranje frižidera
             </Link>
 
             <div className="mt-2 rounded-2xl border border-white/10 bg-white/5 p-2">
